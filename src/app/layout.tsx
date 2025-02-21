@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Hasnaat Iftikhar",
   description: "Hey, there! I'm Hasnaat Iftikhar, a software engineer based in Lahore, Pakistan.",
 };
