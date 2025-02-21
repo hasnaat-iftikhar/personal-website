@@ -1,49 +1,29 @@
 import React from 'react';
 
 // Components
-import { Footer, Header, PageHeader } from '@/app/components';
-import Faqs from '@/app/components/base/Faqs';
-
-// Sections
-import ProjectsCarousel from './components/ProjectsCarousel';
-import IntroductoryVideo from './components/Video';
-import LatestProjects from './components/LatestProjects';
-import ServicesCarousel from './components/ServicesCarousel';
-import ServicesInfo from './components/ServicesInfo';
+import { Footer, Header, PageHeader } from '@/app/components'
 import Banner from '@/app/components/base/Banner';
+import Faqs from '@/app/components/base/Faqs';
+import MyPricing from './components/MyPricing';
 
 // Icons
 import { Code } from 'lucide-react';
 
-const Work = () => {
+const Pricing = () => {
   return (
     <main className='flex flex-col gap-[120px]'>
       <Header />
 
       <div className='flex flex-col gap-[96px]'>
         <PageHeader
-          headline='Front-End Development, Web DESIGNING & Design to Code'
-          title='High-performance and scalable web solutions tailored to your needs.'
-          button={{
-            children: (
-              <>
-              <Code width={22} height={22} /> 
-              Let's build a project together
-              </>
-            )
-          }}
+          headline='Pricing'
+          title="Flexible Pricing for Quality Development"
+          description="Whether you need a custom website, a scalable web app, or want to bring me on board for your team—I’ve got you covered. My pricing is simple, transparent, and tailored to your project’s needs."
         />
-
-        <ProjectsCarousel />
       </div>
 
-      <IntroductoryVideo />
 
-      <LatestProjects />
-
-      <ServicesCarousel />
-
-      <ServicesInfo />
+      <MyPricing />
 
       <Banner
         image=''
@@ -53,7 +33,7 @@ const Work = () => {
       />
 
       <Faqs />
-        
+
       <div>
         <Banner
           title='Let’s meet!'
@@ -63,13 +43,13 @@ const Work = () => {
           buttons={[
             {
               children: "Book a free consultation",
-              onClick: () => {}
+              onClick: () => { }
             },
             {
               children: (
                 <>
-                <Code width={22} height={22} />
-                Start a project
+                  <Code width={22} height={22} />
+                  Start a project
                 </>
               ),
               style: "outline",
@@ -84,4 +64,4 @@ const Work = () => {
   )
 }
 
-export default Work;
+export default Pricing;

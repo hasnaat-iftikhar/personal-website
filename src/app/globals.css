@@ -19,6 +19,11 @@ body {
   background: var(--background);
 }
 
-#projectsCarousel .swiper-wrapper {
-  gap: 32px
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+  will-change: transform;
+}
+
+.swiper {
+  overflow: hidden !important;
 }

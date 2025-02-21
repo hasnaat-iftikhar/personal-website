@@ -20,17 +20,23 @@ const ServicesCarousel = () => {
             <div className='rotate-6'>
                 <Swiper
                     slidesPerView="auto"
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    spaceBetween={0}
+                    centeredSlides={false}
                     autoplay={{
                         delay: 0,
                         disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                        reverseDirection: false,
                     }}
-                    spaceBetween={0}
                     modules={[Autoplay]}
                     loop={true}
-                    freeMode={true}
                     speed={5000}
+                    allowTouchMove={false}
+                    className="!overflow-visible"
+                    style={{
+                        width: "100%",
+                        transform: "translateX(0)",
+                    }}
                 >
                     {Array(4)
                         .fill("Show me what you’ve got! - ")
@@ -51,31 +57,34 @@ const ServicesCarousel = () => {
 
                 <Swiper
                     slidesPerView="auto"
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    spaceBetween={0}
+                    centeredSlides={false}
                     autoplay={{
                         delay: 0,
                         disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
                         reverseDirection: true,
                     }}
-                    spaceBetween={0}
                     modules={[Autoplay]}
                     loop={true}
-                    freeMode={true}
                     speed={5000}
-                    dir="rtl"
+                    allowTouchMove={false}
+                    className="!overflow-visible"
+                    style={{
+                        width: "100%",
+                        transform: "translateX(0)",
+                    }}
                 >
-                    {["Front-End,", "No-code,", "Web Design,", "Design to Code,"].map(
-                        (text, index) => (
+                    {[" Front-End Development - ", " Back-End Development - ", " Design to Code - ", " Web Design - "]
+                        .map((text, index) => (
                             <SwiperSlide key={index} className="w-fit">
                                 <h2
-                                    className={`w-fit text-[120px] whitespace-nowrap ${MediaSans.className} text-[#1B1B1B]`}
+                                    className={`w-fit text-[120px] text-black ${MediaSans.className}`}
                                 >
                                     {text}
                                 </h2>
                             </SwiperSlide>
-                        )
-                    )}
+                        ))}
                 </Swiper>
             </div>
         </section>

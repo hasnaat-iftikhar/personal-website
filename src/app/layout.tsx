@@ -3,12 +3,17 @@ import localFont from 'next/font/local'
 import "./globals.css";
 
 const metadata: Metadata = {
-  title: "Hasnaat Iftikhar",
+  title: "",
   description: "Hey, there! I'm Hasnaat Iftikhar, a software engineer based in Lahore, Pakistan.",
 };
 
 export const MediaSans = localFont({
   src: '../fonts/MediaSans.ttf',
+  display: 'auto'
+});
+
+export const ClashDisplay = localFont({
+  src: '../fonts/ClashDisplay.otf',
   display: 'auto'
 });
 
