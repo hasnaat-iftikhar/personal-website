@@ -31,6 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={SFProDisplay.className}>
+      <head>
+        <title>{`${metadata.title}`}</title>
+        <meta name="description" content={`${metadata.description}`} />
+      </head>
       <body>
         {children}
       </body>
