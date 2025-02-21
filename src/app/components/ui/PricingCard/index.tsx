@@ -3,7 +3,7 @@ import React, { FC } from "react";
 // Type definitions
 import Button from "../Button";
 import { PricingCardProps } from "./index.d";
-import { ClashDisplay, MediaSans } from "@/app/layout";
+import { ClashDisplay, MediaSans } from "@/app/utils/fonts";
 
 // Icons
 import { ArrowRight, Check } from "lucide-react";

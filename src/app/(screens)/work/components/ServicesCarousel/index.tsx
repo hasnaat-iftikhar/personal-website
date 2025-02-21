@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import { Autoplay } from 'swiper/modules';
 
 // Fonts
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 
 const ServicesCarousel = () => {
     return (

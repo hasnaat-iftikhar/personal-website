@@ -5,7 +5,7 @@ import React, { FC } from 'react';
 import { ServiceInfoProps } from './index.d';
 
 // Fonts
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 
 const ServiceInfo:FC<ServiceInfoProps> = ({
   headline,

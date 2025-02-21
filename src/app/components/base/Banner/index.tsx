@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { BannerProps } from './index.d';
 
 // Components
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 import Container from '../../layout/Container';
 import Button from '../../ui/Button';
 

@@ -4,7 +4,7 @@ import React, { FC } from 'react';
 import { CardProps } from './index.d';
 
 // Layout
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 import Image from 'next/image';
 
 const Card: FC<CardProps> = ({
@@ -20,7 +20,7 @@ const Card: FC<CardProps> = ({
                 alt={`Card - ${title}`}       
                 className='w-full h-full'     
             />
-            
+
             <div className='relative z-10 flex flex-col gap-[24px]'>
                 <h3 className={`${MediaSans.className} text-[40px] text-white leading-[100%]`}>
                     {title}

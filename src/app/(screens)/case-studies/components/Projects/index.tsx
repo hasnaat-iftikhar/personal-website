@@ -1,4 +1,4 @@
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 import React from 'react'
 
 const Projects = () => {

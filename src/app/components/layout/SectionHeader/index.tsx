@@ -4,7 +4,7 @@ import React, { FC } from 'react';
 import { SectionHeaderProps } from './index.d';
 
 // Fonts
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 
 const SectionHeader:FC<SectionHeaderProps> = ({
     title,

@@ -4,7 +4,7 @@ import { CSSProperties } from "react";
 import { Button, Container, Header } from "./components";
 
 // Fonts
-import { MediaSans } from "./layout";
+import { MediaSans } from "./utils/fonts";
 
 // Icons
 import { Code, Figma } from "lucide-react";

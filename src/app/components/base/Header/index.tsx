@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button, Container } from '@/app/components';
 
 // Fonts
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 
 // Icons
 import { Briefcase } from 'lucide-react';

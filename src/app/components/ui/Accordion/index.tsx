@@ -2,7 +2,7 @@
 
 import React, { FC, useState } from "react";
 import { AccordionProps } from './index.d';
-import { MediaSans } from "@/app/layout";
+import { MediaSans } from '@/app/utils/fonts';
 import { ArrowDown } from "lucide-react";
 
 const Accordion: FC<AccordionProps> = ({

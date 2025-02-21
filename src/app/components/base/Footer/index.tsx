@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Container from '../../layout/Container';
 
 // Fonts
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 
 const Footer = () => {
     return (

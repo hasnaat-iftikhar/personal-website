@@ -1,6 +1,6 @@
 import { Button, Container } from '@/app/components';
 import PricingCard from '@/app/components/ui/PricingCard';
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 import { Briefcase } from 'lucide-react';
 import React from 'react'
 

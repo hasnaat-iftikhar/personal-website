@@ -8,7 +8,7 @@ import Button from '../../ui/Button';
 import { PageHeaderProps } from './index.d';
 
 // Fonts
-import { MediaSans } from '@/app/layout';
+import { MediaSans } from '@/app/utils/fonts';
 
 const PageHeader: FC<PageHeaderProps> = ({
   className = "",
