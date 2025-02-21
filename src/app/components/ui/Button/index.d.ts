@@ -6,7 +6,7 @@ type ButtonStyle = "solid" | "outline";
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode;
-    onClick?: () => void = () => {};
+    onClick?: () => void;
     type?: ButtonType;
     style?: ButtonStyle;
 }

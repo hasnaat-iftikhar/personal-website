@@ -11,7 +11,7 @@ const ServiceInfo:FC<ServiceInfoProps> = ({
   headline,
   title,
   description,
-  image,
+  // image,
   reverse = false
 }) => {
   return (

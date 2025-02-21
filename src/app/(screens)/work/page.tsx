@@ -28,7 +28,7 @@ const Work = () => {
             children: (
               <>
               <Code width={22} height={22} /> 
-              Let's build a project together
+              Let&apos;s build a project together
               </>
             )
           }}
