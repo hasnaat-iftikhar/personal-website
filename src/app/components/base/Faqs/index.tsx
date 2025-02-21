@@ -10,22 +10,22 @@ const Faqs = () => {
       <div className='w-full mx-auto flex flex-col gap-6'>
         <Accordion
           title="Question 1"
-          children="Here is the answer"
+          content="Here is the answer"
         />
 
         <Accordion
           title="Question 1"
-          children="Here is the answer"
+          content="Here is the answer"
         />
 
         <Accordion
           title="Question 1"
-          children="Here is the answer"
+          content="Here is the answer"
         />
 
         <Accordion
           title="Question 1"
-          children="Here is the answer"
+          content="Here is the answer"
         />
       </div>
     </Container>

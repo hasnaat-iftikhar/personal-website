@@ -19,7 +19,7 @@ export default function Home() {
       <section className="mt-[96px]">
             <Container>
                 <div className='flex flex-col gap-6'>
-                    <p className='text-[32px] text-[#1B1B1B]'>👋 Hey, I'm Hasnaat and I'm a</p>
+                    <p className='text-[32px] text-[#1B1B1B]'>👋 Hey, I&apos;m Hasnaat and I&apos;m a</p>
 
                     <div className='flex flex-col'>
                         <h2 className={headingClassNames}>Front-End Developer</h2>

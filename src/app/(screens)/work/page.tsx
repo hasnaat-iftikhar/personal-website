@@ -47,16 +47,16 @@ const Work = () => {
 
       <Banner
         image=''
-        headline='Hey, It’s me!!'
+        headline='Hey, It&apos;s me!!'
         title='Turning Ideas into Reality, One Line of Code at a Time'
-        description='Building smooth, fast, and modern web apps isn’t just my work—it’s what I love doing. Every project I take on is crafted with care, ensuring quality, performance, and attention to detail.'
+        description='Building smooth, fast, and modern web apps isn&apos;t just my work—it&apos;s what I love doing. Every project I take on is crafted with care, ensuring quality, performance, and attention to detail.'
       />
 
       <Faqs />
         
       <div>
         <Banner
-          title='Let’s meet!'
+          title='Let&apos;s meet!'
           description='Book a free 15-minute session where we will discuss your project, your issues and how to solve them.'
           descriptionClassName='max-w-[370px]'
           image="/"

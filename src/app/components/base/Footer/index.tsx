@@ -17,8 +17,8 @@ const Footer = () => {
                             { label: "Work", href: "/" },
                             { label: "Pricing", href: "/" },
                             { label: "Content Creation", href: "/" }
-                        ].map((link) => (
-                            <Link className='text-white text-[20px]' href={link.href}>{link.label}</Link>
+                        ].map((link, index) => (
+                            <Link key={index} className='text-white text-[20px]' href={link.href}>{link.label}</Link>
                         ))}
                     </div>
 

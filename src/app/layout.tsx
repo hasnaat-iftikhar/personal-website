@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
 
-const metadata: Metadata = {
-  title: "",
-  description: "Hey, there! I'm Hasnaat Iftikhar, a software engineer based in Lahore, Pakistan.",
-};
+// const metadata: Metadata = {
+//   title: "",
+//   description: "Hey, there! I'm Hasnaat Iftikhar, a software engineer based in Lahore, Pakistan.",
+// };
 
 export const MediaSans = localFont({
   src: '../fonts/MediaSans.ttf',

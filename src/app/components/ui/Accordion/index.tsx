@@ -7,7 +7,7 @@ import { ArrowDown } from "lucide-react";
 
 const Accordion: FC<AccordionProps> = ({
   title,
-  children
+  content
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,7 +30,7 @@ const Accordion: FC<AccordionProps> = ({
           isOpen ? "max-h-[500px] opacity-100 py-3" : "max-h-0 opacity-0 py-0"
         }`}
       >
-        <p className="text-[20px]">{children}</p>
+        <p className="text-[20px]">{content}</p>
       </div>
     </div>
   );

@@ -60,7 +60,7 @@ const PricingCard: FC<PricingCardProps> = ({ title, description, price, hourlyRa
 
       {/* Button */}
       <Button className="bg-white text-black">
-        Let's go <ArrowRight width={24} height={24} />
+        Let&apos;s go <ArrowRight width={24} height={24} />
       </Button>
     </div>
   );

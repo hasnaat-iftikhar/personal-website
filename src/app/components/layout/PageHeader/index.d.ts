@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { ButtonProps } from "../../ui/Button";
 
 export interface PageHeaderProps extends React.HTMLAttributes<HTMLElement> {

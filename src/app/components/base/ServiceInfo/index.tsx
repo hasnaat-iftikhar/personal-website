@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 // Type definations
 import { ServiceInfoProps } from './index.d';

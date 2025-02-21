@@ -5,6 +5,7 @@ import { CardProps } from './index.d';
 
 // Layout
 import { MediaSans } from '@/app/layout';
+import Image from 'next/image';
 
 const Card: FC<CardProps> = ({
     title,
@@ -12,8 +13,15 @@ const Card: FC<CardProps> = ({
     image
 }) => {
     return (
-        <div className='bg-[#272727] w-full h-[540px] rounded-[28px] flex justify-start items-end p-[42px]'>
-            <div className='flex flex-col gap-[24px]'>
+        <div className='relative bg-[#272727] w-full h-[540px] rounded-[28px] flex justify-start items-end p-[42px]'>
+            <Image
+                src={image}
+                fill
+                alt={`Card - ${title}`}       
+                className='w-full h-full'     
+            />
+            
+            <div className='relative z-10 flex flex-col gap-[24px]'>
                 <h3 className={`${MediaSans.className} text-[40px] text-white leading-[100%]`}>
                     {title}
                 </h3>
