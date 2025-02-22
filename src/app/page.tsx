@@ -10,7 +10,7 @@ import { MediaSans } from "./utils/fonts";
 import { Code, Figma } from "lucide-react";
 
 export default function Home() {
-  const headingClassNames = `${MediaSans.className} text-[9.8vw] leading-[100%]`;
+  const headingClassNames = `${MediaSans.className} text-[9vw] leading-[100%]`;
 
   return (
     <main>
