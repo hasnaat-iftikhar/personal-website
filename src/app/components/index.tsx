@@ -1,7 +1,10 @@
 // Ui
 export { default as Button } from './ui/Button';
 export { default as Accordion } from './ui/Accordion';
-export {}
+export { default as Modal } from './ui/Modal';
+export { default as ErrorToast } from './ui/ErrorToast';
+export { default as Card } from './ui/Card';
+export { default as PricingCard } from './ui/PricingCard';
 
 // Base
 export { default as Header } from './base/Header';

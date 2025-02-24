@@ -6,6 +6,10 @@ import "./globals.css";
 // Fonts
 import { SFProDisplay } from "./utils/fonts";
 
+// Components
+import WorkForm from "./components/base/WorkForm";
+import { WorkFormProvider } from "./components/base/WorkForm/context/context";
+
 const metadata: Metadata = {
   title: "Hasnaat Iftikhar",
   description: "Hey, there! I'm Hasnaat Iftikhar, a software engineer based in Lahore, Pakistan.",
@@ -23,7 +27,11 @@ export default function RootLayout({
         <meta name="description" content={`${metadata.description}`} />
       </head>
       <body>
-        {children}
+        <WorkFormProvider>
+          {children}
+
+          <WorkForm />
+        </WorkFormProvider>
       </body>
     </html>
   );
