@@ -10,7 +10,7 @@ import { Button, Container } from '@/app/components';
 import { MediaSans } from '@/app/utils/fonts';
 
 // Icons
-import { ArrowRight, Briefcase, Menu } from 'lucide-react';
+import { ArrowRight, Briefcase, Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -38,7 +38,7 @@ const Header = () => {
   ];
 
   return (
-    <header className='h-[100px] flex justify-center items-center'>
+    <header className='relative z-50 h-[100px] flex justify-center items-center'>
       <Container
         className="flex justify-between items-center"
       >
@@ -50,7 +50,11 @@ const Header = () => {
         <button
           onClick={() => setToggle(!toggle)}
         >
-          <Menu width={36} height={36} />
+          {toggle ? (
+            <X width={36} height={36} />
+          ) : (
+            <Menu width={36} height={36} />
+          )}
         </button>
 
         <div
