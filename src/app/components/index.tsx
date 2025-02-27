@@ -2,7 +2,6 @@
 export { default as Button } from './ui/Button';
 export { default as Accordion } from './ui/Accordion';
 export { default as Modal } from './ui/Modal';
-export { default as ErrorToast } from './ui/ErrorToast';
 export { default as Card } from './ui/Card';
 export { default as PricingCard } from './ui/PricingCard';
 export { default as Badge } from './ui/Badge';
