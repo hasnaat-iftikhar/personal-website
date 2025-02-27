@@ -22,10 +22,10 @@ const Button:FC<ButtonProps> = ({
     return (
         <button
             className={`
-                h-[60px]
+                h-[56px] 2xl:h-[60px]
                 flex justify-center items-center gap-3
                 px-6 rounded-2xl
-                text-[20px]
+                text-[18px] 2xl:text-[20px]
                 ${getButtonStyle}
                 ${className}
             `}

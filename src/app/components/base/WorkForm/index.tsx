@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 // Components
 import Modal from '../../ui/Modal';
@@ -20,6 +20,8 @@ const WorkForm = () => {
         handleModalActiveState
     } = useWorkForm();
 
+    const [isModalActive, setIsModalActive] = useState<boolean>(false);
+
     const getTitle = useMemo(() => {
         switch(currentStep) {
             case 1:
@@ -35,7 +37,11 @@ const WorkForm = () => {
         }
     }, [currentStep]);
 
-    if(!modal.isActive) {
+    useEffect(() => {
+        setIsModalActive(modal.isActive);
+    }, [modal.isActive]);
+
+    if(!isModalActive) {
         return null;
     };
 

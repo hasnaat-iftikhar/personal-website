@@ -3,12 +3,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { WorkFormProvider } from "./components/base/WorkForm/context/context";
+
 // Fonts
 import { SFProDisplay } from "./utils/fonts";
 
 // Components
 import WorkForm from "./components/base/WorkForm";
-import { WorkFormProvider } from "./components/base/WorkForm/context/context";
 
 const metadata: Metadata = {
   title: "Hasnaat Iftikhar",
@@ -26,6 +27,7 @@ export default function RootLayout({
         <title>{`${metadata.title}`}</title>
         <meta name="description" content={`${metadata.description}`} />
       </head>
+
       <body>
         <WorkFormProvider>
           {children}

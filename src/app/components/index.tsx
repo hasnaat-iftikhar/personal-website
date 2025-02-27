@@ -5,6 +5,7 @@ export { default as Modal } from './ui/Modal';
 export { default as ErrorToast } from './ui/ErrorToast';
 export { default as Card } from './ui/Card';
 export { default as PricingCard } from './ui/PricingCard';
+export { default as Badge } from './ui/Badge';
 
 // Base
 export { default as Header } from './base/Header';
