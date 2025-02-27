@@ -1,3 +1,5 @@
+"use client";
+
 // Components
 import Button from "@/app/components/ui/Button";
 import { toast, ToastContainer } from "react-toastify";
