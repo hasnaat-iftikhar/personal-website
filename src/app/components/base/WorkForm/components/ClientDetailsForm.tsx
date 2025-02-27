@@ -1,12 +1,10 @@
-"use client";
-
 // Components
 import Button from "@/app/components/ui/Button";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // Hooks
-import { useForm } from "react-hook-form";
+import { useForm, UseFormRegister, FieldErrors } from "react-hook-form";
 import { useWorkForm } from "../context/context";
 import { useEffect } from "react";
 
@@ -28,10 +26,10 @@ const InputField = ({
 }: {
   label: string;
   type?: string;
-  register: any;
+  register: UseFormRegister<FormData>;
   name: keyof FormData;
   validation?: object;
-  errors: any;
+  errors: FieldErrors<FormData>;
 }) => {
   return (
     <div className="w-full">

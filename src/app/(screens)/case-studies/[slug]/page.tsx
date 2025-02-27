@@ -19,6 +19,7 @@ export default async function Page({
   params: Promise<{ slug: string }>
 }) {
   const slug = (await params).slug;
+  console.log(slug)
 
   return <main className='flex flex-col gap-[120px]'>
     <Header />
