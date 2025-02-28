@@ -8,11 +8,11 @@ import Card from '@/app/components/ui/Card';
 
 const LatestProjects = () => {
   return (
-    <section className='bg-[#1B1B1B] py-[120px]'>
+    <section className='bg-[#1B1B1B] py-[96px] md:py-[120px]'>
         <Container>
             <SectionHeader title='Latest Projects' />
 
-            <div className='mt-[64px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4'>
+            <div className='mt-[42px] md:mt-[64px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-4'>
                 <Card
                     title='Project name'
                     description='Project description here...'

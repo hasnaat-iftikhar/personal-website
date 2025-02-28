@@ -16,7 +16,7 @@ import { MediaSans } from '@/app/utils/fonts';
 
 const ServicesCarousel = () => {
     return (
-        <section className='py-[120px] overflow-hidden'>
+        <section className='hidden md:block md:py-[120px] overflow-hidden'>
             <div className='rotate-6'>
                 <Swiper
                     slidesPerView="auto"

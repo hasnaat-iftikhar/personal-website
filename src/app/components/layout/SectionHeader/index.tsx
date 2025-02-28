@@ -12,7 +12,7 @@ const SectionHeader:FC<SectionHeaderProps> = ({
 }) => {
   return (
       <div className='flex flex-col justify-center items-center gap-2'>
-          <h2 className={`${MediaSans.className} text-[56px] 2xl:text-[64px] leading-[100%] text-white text-center`}>
+          <h2 className={`${MediaSans.className} text-[42px] md:text-[56px] 2xl:text-[64px] leading-[100%] text-white text-center`}>
               {title}
           </h2>
 
