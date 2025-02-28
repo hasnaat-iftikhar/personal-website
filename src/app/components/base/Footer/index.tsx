@@ -11,8 +11,8 @@ const Footer = () => {
     return (
         <footer className='bg-black h-20'>
             <Container className='h-full'>
-                <div className='h-full flex justify-between items-center'>
-                    <div className='flex justify-start items-start gap-10'>
+                <div className='flex h-full justify-between items-center'>
+                    <div className='hidden md:flex justify-start items-start gap-10'>
                         {[
                             { label: "Work", href: "/" },
                             { label: "Pricing", href: "/" },
