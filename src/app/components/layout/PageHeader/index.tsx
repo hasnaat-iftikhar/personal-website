@@ -24,7 +24,7 @@ const PageHeader: FC<PageHeaderProps> = ({
       <Container>
         <div className='flex flex-col justify-center items-center gap-6'>
           <div className='flex flex-col justify-center items-center gap-2'>
-            <p className='max-w-[480px] text-center mx-auto lg:max-w-[auto] uppercase text-[14px] md:text-[16px] xl:text-xl text-[#F68D00] tracking-[5px] leading-[140%]'>
+            <p className='max-w-[480px] lg:max-w-[100%] text-center mx-auto uppercase text-[14px] md:text-[16px] xl:text-xl text-[#F68D00] tracking-[5px] leading-[140%]'>
               {headline}
             </p>
             <h3 className={`${MediaSans.className} max-w-[1000px] 2xl:max-w-[1415px] mx-auto text-[48px] md:text-[58px] lg:text-[62px] xl:text-[72px] 2xl:text-[96px] text-center leading-[100%]`}>
