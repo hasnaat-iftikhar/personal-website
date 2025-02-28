@@ -20,7 +20,7 @@ const Work = () => {
     <main className='flex flex-col gap-[96px] md:gap-[120px]'>
       <Header />
 
-      <div className='flex flex-col gap-[96px]'>
+      <div className='flex flex-col gap-[24px] md:gap-[96px]'>
         <PageHeader
           headline='Front-End Development, Web DESIGNING & Design to Code'
           title='High-performance and scalable web solutions tailored to your needs.'
