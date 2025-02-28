@@ -38,7 +38,7 @@ const ServicesCarousel = () => {
                         transform: "translateX(0)",
                     }}
                 >
-                    {Array(4)
+                    {Array(8)
                         .fill("Show me what you’ve got! - ")
                         .map((text, index) => (
                             <SwiperSlide key={index} className="w-fit">
@@ -47,7 +47,7 @@ const ServicesCarousel = () => {
                                         WebkitTextStroke: "2px black",
                                         color: "#fff",
                                     } as CSSProperties}
-                                    className={`w-fit text-[120px] whitespace-nowrap ${MediaSans.className}`}
+                                    className={`w-fit text-[64px] md:text-[82px] xl:text-[82px] 2xl:text-[120px] whitespace-nowrap ${MediaSans.className}`}
                                 >
                                     {text}
                                 </h2>
@@ -75,11 +75,11 @@ const ServicesCarousel = () => {
                         transform: "translateX(0)",
                     }}
                 >
-                    {[" Front-End Development - ", " Back-End Development - ", " Design to Code - ", " Web Design - "]
+                    {[" Front-End Development - ", " Back-End Development - ", " Design to Code - ", " Web Design - ", " Front-End Development - ", " Back-End Development - ", " Design to Code - ", " Web Design - "]
                         .map((text, index) => (
                             <SwiperSlide key={index} className="w-fit">
                                 <h2
-                                    className={`w-fit text-[120px] text-black ${MediaSans.className}`}
+                                    className={`w-fit text-[64px] md:text-[82px] xl:text-[82px] 2xl:text-[120px] text-black ${MediaSans.className}`}
                                 >
                                     {text}
                                 </h2>

@@ -34,7 +34,7 @@ const ProjectsCarousel = () => {
       >
         {[1, 2, 3, 4, 1, 2, 3, 4].map((slideNumber, index) => (
           <SwiperSlide key={index} className="!w-auto transition-transform">
-            <div className="w-[520px] aspect-video bg-[#F1F1F1] rounded-[28px] flex justify-center items-center">
+            <div className="w-[360px] md:w-[520px] aspect-video bg-[#F1F1F1] rounded-[18px] md:rounded-[28px] flex justify-center items-center">
               Slide {slideNumber}
             </div>
           </SwiperSlide>

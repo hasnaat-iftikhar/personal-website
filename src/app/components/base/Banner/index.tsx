@@ -38,21 +38,21 @@ const Banner: FC<BannerProps> = ({
                         {headline && (
                             <p className='text-[20px] text-[#F68D00] tracking-[5px] uppercase'>{headline}</p>
                         )}
-                        <h2 className={`${MediaSans.className} capitalize tracking-[2px] text-[64px] leading-[100%] text-white`}>{title}</h2>
+                        <h2 className={`${MediaSans.className} capitalize tracking-[2px] text-[42px] md:text-[56px] 2xl:text-[64px] leading-[100%] text-white`}>{title}</h2>
                     </div>
 
                     {description && (
-                        <p className={`text-[20px] text-white leading-[140%] ${descriptionClassName}`}>{description}</p>
+                        <p className={`text-[16px] md:text-[20px] text-white leading-[140%] ${descriptionClassName}`}>{description}</p>
                     )}
 
                     {buttons && (
-                        <div className='flex justify-start items-start gap-3'>
+                        <div className='flex flex-col md:flex-row justify-start items-start gap-2 w-full md:w-auto md:gap-3'>
                             {buttons?.length > 0 && buttons.map((btn, index) => (
                                 <Button
                                     key={index}
                                     style={btn.style}
                                     type={btn.type}
-                                    className={btn.className}
+                                    className={`${btn.className} w-full md:w-fit`}
                                 >
                                     {btn.children}
                                 </Button>

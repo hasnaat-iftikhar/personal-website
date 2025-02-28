@@ -18,9 +18,9 @@ const Accordion: FC<AccordionProps> = ({
         className="w-full text-left py-3 flex justify-between items-center transition-all duration-300"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className={`${MediaSans.className} text-[40px]`}>{title}</span>
-        <div className={`w-[42px] h-[42px] rounded-full bg-black flex justify-center items-center transform transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}>
-        <ArrowDown width={24} height={24} className="text-white" />
+        <span className={`${MediaSans.className} text-[32px] md:text-[40px]`}>{title}</span>
+        <div className={`w-[36px] h-[36px] md:w-[42px] md:h-[42px] rounded-full bg-black flex justify-center items-center transform transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}>
+        <ArrowDown width={24} height={24} className="text-white w-[18px] h-[18px] md:w-[24px] md:h-[24px]" />
         </div>
       </button>
 

@@ -41,7 +41,7 @@ export default function Home() {
 
                         <p className='text-[20px] md:text-[24px] text-center md:text-left 2xl:text-[32px]'>based in Lahore, Pakistan.</p>
 
-                        <div className='flex flex-col w-[250px] md:w-auto mx-auto md:mr-auto md:ml-0 md:flex-row justify-start items-center gap-3'>
+                        <div className='flex flex-col w-[250px] md:w-auto mx-auto md:mr-auto md:ml-0 md:flex-row justify-start items-center gap-2 md:gap-3'>
                             <Button
                                 onClick={() => handleModalActiveState(true)}
                             >

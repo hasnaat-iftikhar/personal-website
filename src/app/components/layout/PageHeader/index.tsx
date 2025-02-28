@@ -24,10 +24,10 @@ const PageHeader: FC<PageHeaderProps> = ({
       <Container>
         <div className='flex flex-col justify-center items-center gap-6'>
           <div className='flex flex-col justify-center items-center gap-2'>
-            <p className='uppercase text-xl text-[#F68D00] tracking-[5px]'>
+            <p className='max-w-[480px] text-center mx-auto lg:max-w-[auto] uppercase text-[14px] md:text-[16px] xl:text-xl text-[#F68D00] tracking-[5px]'>
               {headline}
             </p>
-            <h3 className={`${MediaSans.className} max-w-[1415px] mx-auto text-[96px] text-center leading-[100%]`}>
+            <h3 className={`${MediaSans.className} max-w-[1000px] 2xl:max-w-[1415px] mx-auto text-[42px] md:text-[58px] lg:text-[62px] xl:text-[72px] 2xl:text-[96px] text-center leading-[100%]`}>
               {title}
             </h3>
             {description && (

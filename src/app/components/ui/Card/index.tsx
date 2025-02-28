@@ -13,7 +13,7 @@ const Card: FC<CardProps> = ({
     image
 }) => {
     return (
-        <div className='relative bg-[#272727] w-full h-[540px] rounded-[28px] flex justify-start items-end p-[42px]'>
+        <div className='relative bg-[#272727] w-full h-[540px] rounded-[28px] flex justify-start items-end p-[36px] 2xl:p-[42px]'>
             <Image
                 src={image}
                 fill
@@ -22,7 +22,7 @@ const Card: FC<CardProps> = ({
             />
 
             <div className='relative z-10 flex flex-col gap-[24px]'>
-                <h3 className={`${MediaSans.className} text-[40px] text-white leading-[100%]`}>
+                <h3 className={`${MediaSans.className} text-[36px] 2xl:text-[40px] text-white leading-[100%]`}>
                     {title}
                 </h3>
                 <p className='text-[20px] text-white leading-[100%]'>

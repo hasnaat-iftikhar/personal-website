@@ -10,6 +10,7 @@ const ServicesInfo = () => {
             headline='Pixel-Perfect Development'
             title='Your Design, Built to Perfection'
             description='No weird gaps, no misaligned buttons—just a clean, pixel-perfect build that looks exactly like the design. I make sure everything is in place, responsive, and smooth, so your website feels just right on every screen.'
+            reverse={false}
             image=''
         />
     </Container>
