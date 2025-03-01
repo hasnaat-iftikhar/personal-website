@@ -27,3 +27,7 @@ body {
 .swiper {
   overflow: hidden !important;
 }
+
+.hidden-vertical-scrollBar::-webkit-scrollbar {
+  width: 0;
+}

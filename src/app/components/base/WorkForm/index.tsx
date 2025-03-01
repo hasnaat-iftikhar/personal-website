@@ -23,7 +23,7 @@ const WorkForm = () => {
     const [isModalActive, setIsModalActive] = useState<boolean>(false);
 
     const getTitle = useMemo(() => {
-        switch(currentStep) {
+        switch (currentStep) {
             case 1:
                 return "What do you need?";
             case 2:
@@ -41,7 +41,7 @@ const WorkForm = () => {
         setIsModalActive(modal.isActive);
     }, [modal.isActive]);
 
-    if(!isModalActive) {
+    if (!isModalActive) {
         return null;
     };
 
@@ -49,7 +49,7 @@ const WorkForm = () => {
         <Modal
             onClose={() => handleModalActiveState(false)}
         >
-            <div className='max-w-[92%] md:max-w-[600px] w-full flex flex-col justify-center items-center gap-[42px]'>
+            <div className='max-w-[92%] md:max-w-[600px] w-full flex flex-col items-center gap-[24px] md:gap-[42px] md:h-auto h-[500px] md:overflow-visible overflow-y-scroll md:justify-center justify-start mt-auto md:mt-0 mb-[36px] md:mb-0 hidden-vertical-scrollBar'>
                 <div className='flex flex-col gap-2 md:gap-3 text-center'>
                     <p className='text-[#DD7E00] text-[20px] md:text-[24px]'>0{currentStep}/05</p>
                     <h3 className={`${MediaSans.className} text-[40px] md:text-[48px] leading-[100%] text-[#171717]`}>
