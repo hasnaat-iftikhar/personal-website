@@ -39,7 +39,7 @@ const MyPricing = () => {
                 />
             </div>
             
-            <div className='mt-4 md:mt-0 pt-6 p-0 md:p-[64px] md:bg-black md:rounded-[52px] flex justify-between items-start flex-col lg:flex-row gap-4 md:gap-6 lg:gap-0'>
+            <div className='border-t-2 border-solid border-black md:border-0 mt-6 md:mt-0 pt-6 p-0 md:p-[64px] md:bg-black md:rounded-[52px] flex justify-between items-start flex-col lg:flex-row gap-4 md:gap-6 lg:gap-0'>
                 <div className='max-w-[400px] 2xl:max-w-[466px] flex flex-col gap-4 md:gap-6'>
                     <h3 className={`${MediaSans.className} text-[64px] 2xl:text-[82px] leading-[100%] text-black md:text-white`}>Interested in Hiring Me?</h3>
                     <p className='text-[20px] md:text-[28px] 2xl:text-[32px] leading-[140%] w-fit text-black md:text-white'>

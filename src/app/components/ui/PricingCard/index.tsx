@@ -14,7 +14,7 @@ const PricingCard: FC<PricingCardProps> = ({ title, description, price, hourlyRa
   const dollarSign = <span className={`${ClashDisplay.className} text-[46px] md:text-[62px] 2xl:text-[82px] leading-[100%] mt-auto`}>$</span>;
 
   return (
-    <div className="p-8 md:p-16 bg-black flex flex-col gap-4 md:gap-6 rounded-[52px]">
+    <div className="p-8 md:p-16 bg-black flex flex-col gap-4 md:gap-6 rounded-[30px] md:rounded-[52px]">
       {/* Title */}
       <h3 className={`${MediaSans.className} max-w-[500px] text-[48px] md:text-[58px] 2xl:text-[64px] leading-[100%] text-white tracking-[4px]`}>
         {title}
