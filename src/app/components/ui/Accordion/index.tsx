@@ -30,7 +30,7 @@ const Accordion: FC<AccordionProps> = ({
           isOpen ? "max-h-[500px] opacity-100 py-3" : "max-h-0 opacity-0 py-0"
         }`}
       >
-        <p className="text-[20px]">{content}</p>
+        <p className="text-[16px] md:text-[20px]">{content}</p>
       </div>
     </div>
   );
