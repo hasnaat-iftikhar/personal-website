@@ -11,11 +11,11 @@ const Modal: FC<ModalProps> = ({
     return (
         <div
             onClick={onClose}
-            className='z-40 fixed top-0 left-0 w-full h-full backdrop-blur-md flex justify-center items-center'
+            className='z-50 fixed top-0 left-0 w-full h-full backdrop-blur-md flex justify-center items-center'
         >
             <div
                 onClick={(e) => e.stopPropagation()}
-                className='relative w-full max-w-[1280px] aspect-video bg-white border-2 border-solid border-[#E8E8E8] rounded-[28px] flex justify-center items-center'
+                className='relative max-w-[1280px] h-[94dvh] md:h-[90dvh] lg:h-[720px] bg-white border-2 border-solid border-[#E8E8E8] rounded-[28px] flex justify-center items-center w-[90%] 2xl:w-full'
             >
                 <button
                     onClick={onClose}

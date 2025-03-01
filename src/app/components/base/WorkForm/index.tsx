@@ -49,10 +49,10 @@ const WorkForm = () => {
         <Modal
             onClose={() => handleModalActiveState(false)}
         >
-            <div className='max-w-[600px] w-full flex flex-col justify-center items-center gap-[42px]'>
-                <div className='flex flex-col gap-3 text-center'>
-                    <p className='text-[#DD7E00] text-[24px]'>0{currentStep}/05</p>
-                    <h3 className={`${MediaSans.className} text-[48px] leading-[100%] text-[#171717]`}>
+            <div className='max-w-[92%] md:max-w-[600px] w-full flex flex-col justify-center items-center gap-[42px]'>
+                <div className='flex flex-col gap-2 md:gap-3 text-center'>
+                    <p className='text-[#DD7E00] text-[20px] md:text-[24px]'>0{currentStep}/05</p>
+                    <h3 className={`${MediaSans.className} text-[40px] md:text-[48px] leading-[100%] text-[#171717]`}>
                         {getTitle}
                     </h3>
                 </div>

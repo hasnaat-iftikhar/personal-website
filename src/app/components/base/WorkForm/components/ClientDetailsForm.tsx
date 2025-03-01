@@ -74,10 +74,10 @@ const ClientDetailsForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2 md:gap-4">
       <ToastContainer position="top-right" autoClose={2000} />
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
         <InputField
           label="Name"
           name="name"
@@ -94,7 +94,7 @@ const ClientDetailsForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
         <InputField
           label="Email"
           name="email"

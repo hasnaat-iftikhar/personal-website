@@ -9,12 +9,12 @@ import { Button, Container, Header } from "./components";
 import { MediaSans } from "./utils/fonts";
 
 // Icons
-import { Code, Figma } from "lucide-react";
+import { User } from "lucide-react";
 
 // Hooks
 import { useWorkForm } from "./components/base/WorkForm/context/context";
 
-export default function Home() {    
+export default function Home() {
     const {
         handleModalActiveState
     } = useWorkForm();
@@ -40,22 +40,13 @@ export default function Home() {
                         </div>
 
                         <p className='text-[20px] md:text-[24px] text-center md:text-left 2xl:text-[32px]'>based in Lahore, Pakistan.</p>
-
-                        <div className='flex flex-col w-[250px] md:w-auto mx-auto md:mr-auto md:ml-0 md:flex-row justify-start items-center gap-2 md:gap-3'>
-                            <Button
-                                onClick={() => handleModalActiveState(true)}
-                            >
-                                <Code width={22} height={22} />
-                                You need a developer
-                            </Button>
-                            <Button
-                                onClick={() => handleModalActiveState(true)}
-                                style='outline'
-                            >
-                                <Figma width={22} height={22} />
-                                You need a designer
-                            </Button>
-                        </div>
+                        <Button
+                            className="w-fit mx-auto md:mr-auto md:ml-0"
+                            onClick={() => handleModalActiveState(true)}
+                        >
+                            <User width={22} height={22} />
+                            You need a developer & designer
+                        </Button>
                     </div>
                 </Container>
             </section>
