@@ -9,12 +9,12 @@ const Introduction: FC<{
     content = ""
 }) => {
         return (
-            <section className='bg-[#1B1B1B] py-[120px]'>
+            <section className='bg-[#1B1B1B] py-[96px] md:py-[120px]'>
                 <Container>
-                    <div className='max-w-[1024px] mx-auto flex flex-col gap-16'>
-                        <div className='flex flex-col gap-2'>
-                            <h2 className={`${MediaSans.className} text-[64px] text-white tracking-[2px] leading-[100%]`}>Introduction</h2>
-                            <p className='text-[24px] text-[#F1F0EB] leading-[140%]'>{content.split("\n").map((line, index) =>
+                    <div className='max-w-[1024px] mx-auto flex flex-col gap-8 2xl:gap-16'>
+                        <div className='flex flex-col gap-4 2xl:gap-6'>
+                            <h2 className={`${MediaSans.className} text-[42px] md:text-[56px] 2xl:text-[64px] text-white tracking-[2px] leading-[100%]`}>Introduction</h2>
+                            <p className='text-[16px] md:text-[20px] 2xl:text-[24px] text-[#F1F0EB] leading-[140%]'>{content.split("\n").map((line, index) =>
                                 line.trim() === "" ? <br key={index} /> : (
                                     <React.Fragment key={index}>
                                         {line}

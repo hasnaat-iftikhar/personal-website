@@ -22,7 +22,7 @@ const Card: FC<CardProps> = ({
             />
 
             <div className='relative z-10 flex flex-col gap-[16px] md:gap-[24px]'>
-                <h3 className={`${MediaSans.className} text-[32px] md:text-[36px] 2xl:text-[40px] text-white leading-[100%]`}>
+                <h3 className={`${MediaSans.className} text-[38px] md:text-[40px] xl:text-[40px] text-white leading-[100%]`}>
                     {title}
                 </h3>
                 <p className='text-[16px] md:text-[20px] text-white leading-[100%]'>

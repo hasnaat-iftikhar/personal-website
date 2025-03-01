@@ -10,8 +10,8 @@ import { MediaSans } from '@/app/utils/fonts';
 import LabelGroup from '../../mini/LabelGroup';
 
 const BriefIntroduction = () => {
-    const projectNameClassName = "text-[20px] leading-[100%] uppercase";
-    const projectPurposeClassName = `text-[72px] leading-[100%] tracking-[2px] ${MediaSans.className}`;
+    const projectNameClassName = "text-[16px] md:text-[20px] leading-[100%] uppercase";
+    const projectPurposeClassName = `text-[48px] md:text-[62px] xl:text-[72px] leading-[100%] tracking-[2px] ${MediaSans.className}`;
 
     return (
         <section>
@@ -58,7 +58,7 @@ const BriefIntroduction = () => {
                     </div>
                 </div>
 
-                <div className='w-[500px] h-[600px] bg-[#F1F0EB] rounded-[32px]'></div>
+                <div className='hidden lg:block w-[500px] h-[600px] bg-[#F1F0EB] rounded-[32px]'></div>
             </Container>
         </section>
     )

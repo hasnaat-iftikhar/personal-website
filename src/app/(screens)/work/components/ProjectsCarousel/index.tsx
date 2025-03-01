@@ -11,7 +11,7 @@ import { Autoplay } from "swiper/modules"
 
 const ProjectsCarousel = () => {
   return (
-    <section id="projectsCarousel" className="md:py-12 overflow-hidden">
+    <section id="projectsCarousel" className="overflow-hidden">
       <Swiper
         slidesPerView="auto"
         spaceBetween={24}

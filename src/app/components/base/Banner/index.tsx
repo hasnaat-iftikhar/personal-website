@@ -36,9 +36,9 @@ const Banner: FC<BannerProps> = ({
                 <div className='z-40 relative max-w-[600px] mr-auto flex flex-col gap-4'>
                     <div className='flex flex-col gap-2'>
                         {headline && (
-                            <p className='text-[20px] text-[#F68D00] tracking-[5px] uppercase'>{headline}</p>
+                            <p className='text-[16px] md:text-[20px] text-[#F68D00] tracking-[5px] uppercase'>{headline}</p>
                         )}
-                        <h2 className={`${MediaSans.className} capitalize tracking-[2px] text-[42px] md:text-[56px] 2xl:text-[64px] leading-[100%] text-white`}>{title}</h2>
+                        <h2 className={`${MediaSans.className} capitalize tracking-[2px] text-[48px] md:text-[56px] 2xl:text-[64px] leading-[100%] text-white`}>{title}</h2>
                     </div>
 
                     {description && (

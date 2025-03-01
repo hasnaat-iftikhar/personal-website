@@ -21,7 +21,7 @@ export default async function Page({
   const slug = (await params).slug;
   console.log(slug)
 
-  return <main className='flex flex-col gap-[120px]'>
+  return <main className='flex flex-col gap-[96px] md:gap-[120px]'>
     <Header />
 
     <BriefIntroduction />

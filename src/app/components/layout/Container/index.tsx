@@ -8,7 +8,7 @@ const Container:FC<ContainerProps> = ({
     children
 }) => {
   return (
-    <div className={`max-w-[1920px] w-[90%] 2xl:w-[80%] mx-auto ${className}`}>{children}</div>
+    <div className={`max-w-[1920px] w-[90%] 2xl:w-[88%] mx-auto ${className}`}>{children}</div>
   )
 }
 
