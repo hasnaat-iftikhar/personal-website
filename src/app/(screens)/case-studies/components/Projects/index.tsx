@@ -20,7 +20,7 @@ const Projects = () => {
 
     return (
         <Container>
-            <div className='w-full relative flex flex-col gap-6 mx-auto'>
+            <div className='max-w-[1440px] mx-auto w-full relative flex flex-col gap-6 mx-auto'>
                 {projects.map((p, index) => (
                     <div key={index} className='bg-white sticky top-5 w-full h-auto md:h-[620px] aspect-video flex justify-start items-end p-[64px] rounded-[28px] overflow-hidden'>
                         <div

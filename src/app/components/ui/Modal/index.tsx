@@ -20,9 +20,9 @@ const Modal: FC<ModalProps> = ({
         >
             <div
                 onClick={(e) => e.stopPropagation()}
-                className='relative max-w-[1280px] h-[94dvh] md:h-[90dvh] lg:h-[720px] bg-white border-2 border-solid border-[#E8E8E8] rounded-[28px] flex justify-center items-center w-[90%] 2xl:w-full'
+                className='relative max-w-[1440px] h-[80dvh] md:h-[90dvh] lg:h-[720px] bg-white border-2 border-solid border-[#E8E8E8] rounded-[28px] flex justify-center items-center w-[90%] 2xl:w-full'
             >
-                <div className='absolute flex justify-between items-center top-[22px] md:top-[34px] left-[22px] md:left-[34px] right-[22px] md:right-[34px] w-[-webkit-fill-available] h-[42px]'>
+                <div className='absolute flex justify-between items-center top-[22px] md:top-[34px] left-[22px] md:left-[34px] right-[22px] md:right-[34px] w-auto h-[42px]'>
                     <button
                         onClick={handlePreviousStep}
                         className='flex md:hidden mr-auto w-[42px] h-[42px] rounded-[12px] bg-[#E8E8E8] justify-center items-center'

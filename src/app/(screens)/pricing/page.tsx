@@ -22,7 +22,6 @@ const Pricing = () => {
         />
       </div>
 
-
       <MyPricing />
 
       <PageFooter />
