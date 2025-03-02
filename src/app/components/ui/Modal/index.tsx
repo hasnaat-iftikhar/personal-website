@@ -25,7 +25,7 @@ const Modal: FC<ModalProps> = ({
                 <div className='absolute flex justify-between items-center top-[22px] md:top-[34px] left-[22px] md:left-[34px] right-[22px] md:right-[34px] w-[-webkit-fill-available] h-[42px]'>
                     <button
                         onClick={handlePreviousStep}
-                        className='mr-auto w-[42px] h-[42px] rounded-[12px] bg-[#E8E8E8] flex justify-center items-center'
+                        className='flex md:hidden mr-auto w-[42px] h-[42px] rounded-[12px] bg-[#E8E8E8] justify-center items-center'
                     >
                         <ArrowLeft width={24} height={24} className='text-[#1B1B1B]' />
                     </button>

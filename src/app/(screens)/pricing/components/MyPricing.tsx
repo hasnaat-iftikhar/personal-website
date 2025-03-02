@@ -53,7 +53,11 @@ const MyPricing = () => {
                     I bring 5+ years of experience in building high-quality web applications. Whether you need a developer for specific tasks or long-term support, I’m available for flexible contracts.
                     </p>
 
-                    <Button className='w-fit bg-black md:bg-white text-white md:text-black'><Briefcase width={22} height={22} /> Hire me</Button>
+                    <Button
+                        onClick={() => window.open("https://www.linkedin.com/in/hasnaat-iftikhar", "_blank")}
+                        className='w-fit bg-black md:bg-white text-white md:text-black'>
+                        <Briefcase width={22} height={22} /> Hire me
+                    </Button>
                 </div>
             </div>
         </Container>

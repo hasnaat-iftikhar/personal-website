@@ -15,27 +15,27 @@ import { ArrowRight, Briefcase, Menu, X } from 'lucide-react';
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
-  const links:{
+  const links: {
     label: string;
     url: string;
   }[] = [
-    {
-      label: "Work",
-      url: "#",
-    },
-    {
-      label: "Case Studies",
-      url: "#",
-    },
-    {
-      label: "Pricing",
-      url: "#",
-    },
-    {
-      label: "Content Creation",
-      url: "#",
-    }
-  ];
+      {
+        label: "Work",
+        url: "/work",
+      },
+      {
+        label: "Case Studies",
+        url: "/case-studies",
+      },
+      {
+        label: "Pricing",
+        url: "/pricing",
+      },
+      {
+        label: "Content Creation",
+        url: "#",
+      }
+    ];
 
   return (
     <header className='relative z-50 h-[100px] flex justify-center items-center'>
@@ -71,7 +71,9 @@ const Header = () => {
                 </Link>
               ))}
 
-              <Button className='w-full'>
+              <Button
+                onClick={() => window.open("https://www.linkedin.com/in/hasnaat-iftikhar", "_blank")}
+                className='w-full'>
                 <Briefcase width={22} height={22} />
                 Hire me
               </Button>
@@ -84,7 +86,9 @@ const Header = () => {
             <Link href={link.url} key={index} className='text-[18px] 2xl:text-[20px]'>{link.label}</Link>
           ))}
 
-          <Button>
+          <Button
+            onClick={() => window.open("https://www.linkedin.com/in/hasnaat-iftikhar", "_blank")}
+          >
             <Briefcase width={22} height={22} />
             Hire me
           </Button>

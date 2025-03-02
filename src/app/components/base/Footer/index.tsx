@@ -14,8 +14,8 @@ const Footer = () => {
                 <div className='flex h-full justify-between items-center'>
                     <div className='hidden md:flex justify-start items-start gap-10'>
                         {[
-                            { label: "Work", href: "/" },
-                            { label: "Pricing", href: "/" },
+                            { label: "Work", href: "/work" },
+                            { label: "Pricing", href: "/pricing" },
                             { label: "Content Creation", href: "/" }
                         ].map((link, index) => (
                             <Link key={index} className='text-white text-[20px]' href={link.href}>{link.label}</Link>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
 
                     <div className='flex justify-start items-end gap-2'>
-                        <Link href="/" className={`${MediaSans.className} text-[40px] leading-[92%] text-white cursor-pointer`}>Hire me</Link>
+                        <Link href="https://www.linkedin.com/in/hasnaat-iftikhar" className={`${MediaSans.className} text-[40px] leading-[92%] text-white cursor-pointer`} target='_blank'>Hire me</Link>
                         <div className='w-3 h-3 rounded-full bg-[#FC3E6B]' />
                     </div>
                 </div>

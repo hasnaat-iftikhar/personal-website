@@ -53,6 +53,7 @@ const Banner: FC<BannerProps> = ({
                                     style={btn.style}
                                     type={btn.type}
                                     className={`${btn.className} w-full md:w-fit`}
+                                    onClick={btn.onClick || (() => {})}
                                 >
                                     {btn.children}
                                 </Button>

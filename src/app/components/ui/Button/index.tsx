@@ -6,7 +6,7 @@ import { ButtonProps } from './index.d';
 const Button:FC<ButtonProps> = ({
     className = "",
     children,
-    onClick,
+    onClick = () => {},
     style = "solid",
     type = "button",
     ...rest

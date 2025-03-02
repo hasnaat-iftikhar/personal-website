@@ -1,3 +1,5 @@
+"use client";
+
 import React, { createContext, FC, ReactNode, useContext, useReducer } from "react";
 import { workFormReducer } from "./reducer";
 import { WorkFormContextType, WorkFormState } from "./type";
