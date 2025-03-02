@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 
 const CaseStudies = () => {
     return (
-        <main className='flex flex-col gap-[120px]'>
+        <main className='flex flex-col gap-[96px] md:gap-[120px]'>
             <Header />
 
             <div className='flex flex-col gap-[96px]'>

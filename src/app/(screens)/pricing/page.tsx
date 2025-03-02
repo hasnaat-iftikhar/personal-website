@@ -11,7 +11,7 @@ import PageFooter from '@/app/components/layout/PageFooter';
 
 const Pricing = () => {
   return (
-    <main className='flex flex-col gap-[120px]'>
+    <main className='flex flex-col gap-[96px] md:gap-[120px]'>
       <Header />
 
       <div className='flex flex-col gap-[96px]'>
