@@ -7,7 +7,7 @@ import Container from '../../layout/Container';
 const Faqs = () => {
   return (
     <Container>
-      <div className='w-full mx-auto flex flex-col gap-6'>
+      <div className='w-full mx-auto flex flex-col gap-0'>
         <Accordion
           title="What services do you provide?"
           content={`I offer end-to-end web development and design services to help startups and businesses stand out online. My expertise includes:

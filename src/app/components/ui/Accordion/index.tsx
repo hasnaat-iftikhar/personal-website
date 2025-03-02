@@ -15,7 +15,7 @@ const Accordion: FC<AccordionProps> = ({
     <div className="overflow-hidden border-b border-solid border-black">
       {/* Accordion Header */}
       <button
-        className="w-full text-left py-3 flex justify-between items-start md:items-center gap-2 transition-all duration-300"
+        className="w-full text-left py-5 md:py-7 flex justify-between items-start md:items-center gap-2 transition-all duration-300"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className={`${MediaSans.className} text-[36px] md:text-[40px] leading-[100%] flex-1`}>{title}</span>
