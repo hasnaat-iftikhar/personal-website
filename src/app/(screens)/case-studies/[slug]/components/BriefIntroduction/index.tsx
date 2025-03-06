@@ -3,11 +3,10 @@
 import React from 'react';
 
 // Components
-import { Badge, Container } from '@/app/components';
+import { Badge, Container, LabelGroup } from '@/app/components';
 
 // Fonts
 import { MediaSans } from '@/app/utils/fonts';
-import LabelGroup from '../../mini/LabelGroup';
 
 const BriefIntroduction = () => {
     const projectNameClassName = "text-[16px] md:text-[20px] leading-[100%] uppercase";

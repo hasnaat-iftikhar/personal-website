@@ -3,18 +3,18 @@ import React, { FC, useMemo } from 'react';
 // Type definations
 import { ButtonProps } from './index.d';
 
-const Button:FC<ButtonProps> = ({
+const Button: FC<ButtonProps> = ({
     className = "",
     children,
-    onClick = () => {},
+    onClick = () => { },
     style = "solid",
     type = "button",
     ...rest
 }) => {
     const getButtonStyle = useMemo(() => {
-        if(style === "solid") {
+        if (style === "solid") {
             return "bg-[#1B1B1B] text-[#fff]";
-        } else if(style === "outline") {
+        } else if (style === "outline") {
             return "border border-solid border-[#1B1B1B] text-[#1B1B1B]";
         }
     }, [style]);

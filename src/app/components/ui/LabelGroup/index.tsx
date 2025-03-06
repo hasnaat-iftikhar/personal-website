@@ -24,6 +24,6 @@ const LabelGroup:FC<{
         )}
     </div>
   )
-}
+};
 
 export default LabelGroup;

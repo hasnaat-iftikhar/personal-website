@@ -5,7 +5,7 @@ import React from 'react';
 // Components
 import { Header, PageHeader } from '@/app/components'
 import PageFooter from '@/app/components/layout/PageFooter';
-import Projects from './components/Projects';
+import Projects from '../../components/base/Projects';
 
 const CaseStudies = () => {
     return (

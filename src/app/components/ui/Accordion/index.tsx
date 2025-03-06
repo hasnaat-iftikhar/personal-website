@@ -1,8 +1,14 @@
 "use client";
 
 import React, { FC, useState } from "react";
+
+// Type definations
 import { AccordionProps } from './index.d';
+
+// Utility files
 import { MediaSans } from '@/app/utils/fonts';
+
+// Icons
 import { ArrowDown } from "lucide-react";
 
 const Accordion: FC<AccordionProps> = ({

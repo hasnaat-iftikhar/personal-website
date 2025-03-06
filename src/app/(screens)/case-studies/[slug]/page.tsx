@@ -1,13 +1,12 @@
 // Components
-import { Header } from "@/app/components";
+import { Header, PageFooter } from "@/app/components";
 
 // Sections
-import BriefIntroduction from "./components/sections/BriefIntroduction";
-import ProjectDetailGrid from "./components/sections/ProjectDetailGrid";
-import FullWidthImage from "./components/sections/FullWidthImage";
-import Introduction from "./components/sections/Introduction";
-import ProjectDetailImageGrid from "./components/sections/ProjectDetailImageGrid";
-import PageFooter from "@/app/components/layout/PageFooter";
+import BriefIntroduction from "./components/BriefIntroduction";
+import ProjectDetailGrid from "./components/ProjectDetailGrid";
+import FullWidthImage from "./components/FullWidthImage";
+import Introduction from "./components/Introduction";
+import ProjectDetailImageGrid from "./components/ProjectDetailImageGrid";
 
 export default async function Page({
   params,
