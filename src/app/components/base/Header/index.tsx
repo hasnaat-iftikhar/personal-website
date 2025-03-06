@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header className='relative z-50 h-[100px] flex justify-center items-center'>
       <Container>
-        <div className='max-w-[1440px] mx-auto flex justify-between items-center'>
+        <div className=' flex justify-between items-center'>
           <div className='flex justify-start items-end'>
             <Link href="/" className={`${MediaSans.className} text-[40px] leading-[92%] text-[#1B1B1B] cursor-pointer`}>Hasnaat</Link>
             <div className='w-3 h-3 rounded-full bg-[#FC3E6B]' />

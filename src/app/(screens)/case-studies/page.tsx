@@ -3,9 +3,10 @@
 import React from 'react';
 
 // Components
-import { Header, PageHeader } from '@/app/components'
-import PageFooter from '@/app/components/layout/PageFooter';
-import Projects from '../../components/base/Projects';
+import { Header, PageHeader, PageFooter, Projects } from '@/app/components';
+
+// Mock data
+import { projectsData } from '@/app/mock';
 
 const CaseStudies = () => {
     return (
@@ -20,7 +21,7 @@ const CaseStudies = () => {
                 />
             </div>
 
-            <Projects />
+            <Projects data={projectsData} />
 
             <PageFooter />
         </main>

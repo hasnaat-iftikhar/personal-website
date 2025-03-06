@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 // Components
 import { Container } from '@/app/components';
@@ -6,26 +6,16 @@ import { Container } from '@/app/components';
 // Fonts
 import { MediaSans } from '@/app/utils/fonts';
 
-const Projects = () => {
-    const projects = [
-        {
-            title: "P1",
-            description: "D1"
-        },
-        {
-            title: "P2",
-            description: "D2"
-        },
-        {
-            title: "P3",
-            description: "D3"
-        },
-    ];
+// Type definations
+import { ProjectsProps } from './index.d';
 
+const Projects:FC<ProjectsProps> = ({
+    data
+}) => {
     return (
         <Container>
-            <div className='max-w-[1440px] mx-auto w-full relative flex flex-col gap-6'>
-                {projects.map((p, index) => (
+            <div className=' w-full relative flex flex-col gap-6'>
+                {data.map((p, index) => (
                     <div key={index} className='bg-white sticky top-5 w-full h-auto md:h-[620px] aspect-video flex justify-start items-end p-[64px] rounded-[28px] overflow-hidden'>
                         <div
                             className='bg-gradient-to-b from-[#d9d9d900] via-[rgba(76,76,76,0.5)] to-[rgba(0,0,0,0.7)] bg-[length:100%_100%] bg-no-repeat absolute top-0 left-0 w-full h-full z-10'

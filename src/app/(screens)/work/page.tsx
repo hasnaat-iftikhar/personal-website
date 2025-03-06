@@ -3,21 +3,16 @@
 import React from 'react';
 
 // Components
-import { Header, PageHeader } from '@/app/components';
-import PageFooter from '@/app/components/layout/PageFooter';
+import { Header, PageHeader, IntroductoryVideo, useWorkForm, PageFooter } from '@/app/components';
 
 // Sections
 import ProjectsCarousel from './components/ProjectsCarousel';
-import IntroductoryVideo from './components/Video';
 import LatestProjects from './components/LatestProjects';
 import ServicesCarousel from './components/ServicesCarousel';
 import ServicesInfo from './components/ServicesInfo';
 
 // Icons
 import { Code } from 'lucide-react';
-
-// Hooks
-import { useWorkForm } from '@/app/components/base/WorkForm/context/context';
 
 const Work = () => {
   const {

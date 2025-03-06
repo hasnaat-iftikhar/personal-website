@@ -6,7 +6,7 @@ const ServicesInfo = () => {
   return (
     <>
       <Container>
-        <div className='max-w-[1440px] mx-auto'>
+        <div className=''>
           <ServiceInfo
             headline='Pixel-Perfect Development'
             title='Your Design, Built to Perfection'
@@ -18,7 +18,7 @@ const ServicesInfo = () => {
       </Container>
 
       <Container>
-        <div className='max-w-[1440px] mx-auto'>
+        <div className=''>
           <ServiceInfo
             headline='Pixel-Perfect Development'
             title='Latest Tech for a Faster, Better Website'

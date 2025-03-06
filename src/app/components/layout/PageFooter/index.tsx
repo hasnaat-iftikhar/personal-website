@@ -1,9 +1,13 @@
-import React from 'react'
-import Banner from '../../base/Banner'
-import Faqs from '../../base/Faqs'
-import { Code } from 'lucide-react'
-import { useWorkForm } from '../../base/WorkForm/context/context'
-import Footer from '../../base/Footer'
+import React from 'react';
+
+// Components
+import { Banner, Faqs, useWorkForm, Footer } from '@/app/components';
+
+// Icons
+import { Code } from 'lucide-react';
+
+// Mock data
+import { faqsData } from '@/app/mock'
 
 const PageFooter = () => {
     const {
@@ -19,7 +23,9 @@ const PageFooter = () => {
                 description='Building smooth, fast, and modern web apps isn&apos;t just my work—it&apos;s what I love doing. Every project I take on is crafted with care, ensuring quality, performance, and attention to detail.'
             />
 
-            <Faqs />
+            <Faqs
+                data={faqsData}
+            />
 
             <div>
                 <Banner

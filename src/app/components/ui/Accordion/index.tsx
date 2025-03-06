@@ -34,7 +34,7 @@ const Accordion: FC<AccordionProps> = ({
       <div
         className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-[500px] opacity-100 py-3" : "max-h-0 opacity-0 py-0"}`}
       >
-        <p className="text-[16px] md:text-[20px]">
+        <p className="text-[16px] md:text-[20px] leading-[140%]">
           {content?.split(/\r?\n/).map((line, index) =>
             line.trim() === "" ? (
               <br key={index} />

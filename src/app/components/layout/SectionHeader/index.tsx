@@ -10,17 +10,22 @@ const SectionHeader: FC<SectionHeaderProps> = ({
     title,
     description,
     titleClassName = "",
-    descriptionClassName = ""
+    descriptionClassName = "",
+    children
 }) => {
     return (
-        <div className='flex flex-col justify-center items-center gap-2'>
-            <h2 className={`${MediaSans.className} text-[42px] md:text-[56px] 2xl:text-[64px] leading-[100%] text-center ${titleClassName}`}>
-                {title}
-            </h2>
+        <div className='w-full flex flex-col gap-[42px] md:gap-[64px]'>
+            <div className='flex flex-col justify-center items-center gap-2'>
+                <h2 className={`${MediaSans.className} text-[42px] md:text-[56px] 2xl:text-[64px] leading-[100%] text-center ${titleClassName}`}>
+                    {title}
+                </h2>
 
-            {description && (
-                <p className={`text-[16px] md:text-[20px] leading-[140%] text-center ${descriptionClassName}`}>{description}</p>
-            )}
+                {description && (
+                    <p className={`text-[16px] md:text-[20px] leading-[140%] text-center ${descriptionClassName}`}>{description}</p>
+                )}
+            </div>
+        
+            {children}
         </div>
     )
 }

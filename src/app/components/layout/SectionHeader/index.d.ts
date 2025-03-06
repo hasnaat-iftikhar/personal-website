@@ -3,4 +3,5 @@ export interface SectionHeaderProps {
     description?: string;
     titleClassName?: string;
     descriptionClassName?: string;
+    children: ReactNode;
 }

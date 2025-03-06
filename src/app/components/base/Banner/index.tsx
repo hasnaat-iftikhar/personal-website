@@ -33,7 +33,7 @@ const Banner: FC<BannerProps> = ({
                     className='bg-gradient-to-l from-[#d9d9d900] via-[rgba(76,76,76,0.5)] to-[rgba(0,0,0,0.7)] bg-[length:100%_100%] bg-no-repeat absolute top-0 left-0 w-full h-full z-30'
                 />
                 
-                <div className='max-w-[1440px] mx-auto'>
+                <div className=''>
                     <div className='z-40 relative max-w-[600px] mr-auto flex flex-col gap-4'>
                         <div className='flex flex-col gap-2'>
                             {headline && (
