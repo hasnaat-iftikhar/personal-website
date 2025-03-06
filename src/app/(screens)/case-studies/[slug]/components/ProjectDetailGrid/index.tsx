@@ -4,7 +4,7 @@ import React, { FC } from 'react';
 import { Container } from '@/app/components';
 
 // Type definations
-import { ProjectDetailGridProps } from '.';
+import { ProjectDetailGridProps } from './index.d';
 import { MediaSans } from '@/app/utils/fonts';
 
 const ProjectDetailGrid: FC<ProjectDetailGridProps> = ({
