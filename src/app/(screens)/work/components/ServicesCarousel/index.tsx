@@ -40,7 +40,7 @@ const ServicesCarousel = () => {
                 >
                     {Array(8)
                         .fill("Show me what you have got - ")
-                        .map((text, index) => (
+                        .map((text) => (
                             <SwiperSlide key={text} className="w-fit">
                                 <h2
                                     style={{
@@ -76,7 +76,7 @@ const ServicesCarousel = () => {
                     }}
                 >
                     {[" Front-End Development - ", " Back-End Development - ", " Design to Code - ", " Web Design - ", " Front-End Development - ", " Back-End Development - ", " Design to Code - ", " Web Design - "]
-                        .map((text, index) => (
+                        .map((text) => (
                             <SwiperSlide key={text} className="w-fit">
                                 <h2
                                     className={`w-fit text-[64px] md:text-[82px] xl:text-[82px] 2xl:text-[120px] text-black ${MediaSans.className}`}

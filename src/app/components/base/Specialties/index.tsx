@@ -1,6 +1,6 @@
 "use client";
 
-import React, { type FC, useState } from 'react';
+import React, { type FC } from 'react';
 
 // Components
 import { Card, Container, SectionHeader } from '@/app/components';
@@ -10,11 +10,8 @@ import type { SpecialtyProps } from './index.d';
 
 // Mock data
 import { specialties, specialtyDetails } from '@/app/mock';
-import Image from 'next/image';
 
 const Specialties: FC<SpecialtyProps> = () => {
-    const [activeSpecialty, setActiveSpecialty] = useState<string>('Front-End Development');
-
     return (
         <section className="bg-[#1B1B1B] py-[96px] md:py-[120px]">
             <Container>
@@ -25,7 +22,7 @@ const Specialties: FC<SpecialtyProps> = () => {
                     descriptionClassName='text-white'
                 >
                     <div className='grid grid-cols-3 gap-6'>
-                        {specialties.map((specialty, index) => (
+                        {specialties.map((specialty) => (
                             <Card
                                 key={specialty}
                                 title={specialty}
