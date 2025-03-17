@@ -15,7 +15,7 @@ const PageFooter = () => {
     } = useWorkForm();
 
     return (
-        <>
+        <div className='flex flex-col gap-[96px] md:gap-[160px]'>
             <Banner
                 image=''
                 headline='Hey, It&apos;s me!!'
@@ -54,7 +54,7 @@ const PageFooter = () => {
 
                 <Footer />
             </div>
-        </>
+        </div>
     )
 }
 

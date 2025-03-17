@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import React, { type FC } from 'react';
 import Image from 'next/image';
 
 // Type definations
-import { BannerProps } from './index.d';
+import type { BannerProps } from './index.d';
 
 // Components
 import { MediaSans } from '@/app/utils/fonts';
@@ -39,7 +39,7 @@ const Banner: FC<BannerProps> = ({
                             {headline && (
                                 <p className='text-[16px] md:text-[20px] text-[#F68D00] tracking-[5px] uppercase'>{headline}</p>
                             )}
-                            <h2 className={`${MediaSans.className} capitalize tracking-[2px] text-[48px] md:text-[56px] 2xl:text-[64px] leading-[100%] text-white`}>{title}</h2>
+                            <h2 className={`${MediaSans.className} capitalize tracking-[2px] text-[48px] md:text-[56px] xl:text-[64px] 2xl:text-[72px] leading-[100%] text-white`}>{title}</h2>
                         </div>
 
                         {description && (
@@ -48,9 +48,9 @@ const Banner: FC<BannerProps> = ({
 
                         {buttons && (
                             <div className='flex flex-col md:flex-row justify-start items-start gap-2 w-full md:w-auto md:gap-3'>
-                                {buttons?.length > 0 && buttons.map((btn, index) => (
+                                {buttons?.length > 0 && buttons.map((btn) => (
                                     <Button
-                                        key={index}
+                                        key={btn.type}
                                         style={btn.style}
                                         type={btn.type}
                                         className={`${btn.className} w-full md:w-fit`}

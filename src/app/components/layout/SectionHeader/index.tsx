@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React, { type FC } from 'react';
 
 // Type definations
-import { SectionHeaderProps } from './index.d';
+import type { SectionHeaderProps } from './index.d';
 
 // Fonts
 import { MediaSans } from '@/app/utils/fonts';
@@ -16,7 +16,7 @@ const SectionHeader: FC<SectionHeaderProps> = ({
     return (
         <div className='w-full flex flex-col gap-[42px] md:gap-[64px]'>
             <div className='flex flex-col justify-center items-center gap-2'>
-                <h2 className={`${MediaSans.className} text-[42px] md:text-[56px] 2xl:text-[64px] leading-[100%] text-center ${titleClassName}`}>
+                <h2 className={`${MediaSans.className} text-[42px] md:text-[56px] xl:text-[64px] 2xl:text-[72px] leading-[100%] text-center tracking-[1px] ${titleClassName}`}>
                     {title}
                 </h2>
 

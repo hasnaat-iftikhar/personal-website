@@ -1,12 +1,12 @@
 "use client";
 
-import React, { FC, useState } from 'react';
+import React, { type FC, useState } from 'react';
 
 // Components
 import { Badge, Container, SectionHeader } from '@/app/components';
 
 // Type definations
-import { SpecialtyProps } from './index.d';
+import type { SpecialtyProps } from './index.d';
 
 // Icons
 import { ArrowRight } from 'lucide-react';
@@ -25,7 +25,9 @@ const Specialties: FC<SpecialtyProps> = () => {
             <Container>
                 <SectionHeader
                     title='My Specialties'
+                    description='Idea to implementation, I&apos;ve got you covered.'
                     titleClassName='text-white'
+                    descriptionClassName='text-white'
                 >
                     <div className='w-full flex justify-between items-start gap-[42px] flex-col xl:flex-row'>
                         {/* Sidebar for navigating specialties */}
@@ -35,18 +37,23 @@ const Specialties: FC<SpecialtyProps> = () => {
                                     <div
                                         key={specialty}
                                         onClick={() => setActiveSpecialty(specialty)}
+                                        onKeyDown={(e) => {
+                                            if (e.key === 'Enter' || e.key === ' ') {
+                                                setActiveSpecialty(specialty);
+                                            }
+                                        }}
                                         className={`
-                                    cursor-pointer
-                                    flex justify-between items-center
-                                    text-[36px] md:text-[40px] tracking-[1px] text-white
-                                    ${MediaSans.className}
-                                    ${activeSpecialty === specialty ? 'opacity-100' : 'opacity-30'}
-                                `}
+                                            cursor-pointer
+                                            flex justify-between items-center
+                                            text-[36px] md:text-[40px] tracking-[1px] text-white
+                                            ${MediaSans.className}
+                                            ${activeSpecialty === specialty ? 'opacity-100' : 'opacity-30'}
+                                        `}
                                     >
                                         {specialty}
 
                                         {activeSpecialty === specialty && (
-                                            <ArrowRight width={42} height={42} className='text-[#F68D00]' />
+                                            <ArrowRight width={42} height={42} className='text-[#F68D00] hidden md:block' />
                                         )}
                                     </div>
 
@@ -65,11 +72,11 @@ const Specialties: FC<SpecialtyProps> = () => {
                                 </div>
 
                                 <p className="text-white leading-[140%] text-[16px] md:text-[20px] p-[18px] md:p-6">
-                                    {specialtyDetails[activeSpecialty].description?.split(/\r?\n/).map((line: string, index: number) =>
+                                    {specialtyDetails[activeSpecialty].description?.split(/\r?\n/).map((line: string) =>
                                         line.trim() === "" ? (
-                                            <br key={index} />
+                                            <br key={line} />
                                         ) : (
-                                            <React.Fragment key={index}>
+                                            <React.Fragment key={line}>
                                                 {line}
                                                 <br />
                                             </React.Fragment>

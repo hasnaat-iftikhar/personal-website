@@ -1,6 +1,6 @@
 "use client";
 
-import { CSSProperties } from "react";
+import type { CSSProperties } from "react";
 
 // Components
 import { Button, Container, Header, SectionHeader, IntroductoryVideo, PageFooter, Projects, Specialties } from "./components";
