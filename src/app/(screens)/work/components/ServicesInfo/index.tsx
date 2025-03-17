@@ -6,27 +6,43 @@ const ServicesInfo = () => {
   return (
     <>
       <Container>
-        <div className=''>
-          <ServiceInfo
-            headline='Pixel-Perfect Development'
-            title='Your Design, Built to Perfection'
-            description='No weird gaps, no misaligned buttons—just a clean, pixel-perfect build that looks exactly like the design. I make sure everything is in place, responsive, and smooth, so your website feels just right on every screen.'
-            reverse={false}
-            image=''
-          />
-        </div>
+        <ServiceInfo
+          headline='Optimized Front-End Solutions'
+          title='Latest Tools and Techniques'
+          description='Latest tools and techniques to ensure your web application is optimized, scalable, and well structured. No outdated code—just clean, efficient development that keeps your site running smoothly for years.'
+          reverse={false}
+          image=''
+        />
       </Container>
 
       <Container>
-        <div className=''>
-          <ServiceInfo
-            headline='Pixel-Perfect Development'
-            title='Latest Tech for a Faster, Better Website'
-            description='I use updated tools like React, Next.JS, TypeScript, and Tailwind CSS to build websites that are fast, secure, and easy to scale. No outdated code—just clean, efficient development that keeps your site running smoothly for years.'
-            reverse={true}
-            image=''
-          />
-        </div>
+        <ServiceInfo
+          headline='Scalable Back-End Solutions'
+          title='Performance-Driven Architecture'
+          description='Leverage modern back-end technologies to build secure, type-safe, high-performing, and scalable systems. From API development to database optimization. I use 3-tier architecture to build robust applications.'
+          reverse={true}
+          image=''
+        />
+      </Container>
+
+      <Container>
+        <ServiceInfo
+          headline='AI-Powered Development'
+          title='Latest AI Tools and Techniques'
+          description='Leverage modern AI tools like OpenAI, Grok AI, V0.dev, Bolt.new, GitHub Copilot, Cursor, etc to build scalable web applications by using power of AI tools.'
+          reverse={false}
+          image=''
+        />
+      </Container>
+      
+      <Container>
+        <ServiceInfo
+          headline='Web Application Designing'
+          title='Minimal Design with a touch of elegance'
+          description='I design web applications that are not only functional but also aesthetically pleasing. I use Figma to design web applications that are responsive and user-friendly.'
+          reverse={true}
+          image=''
+        />
       </Container>
     </>
   )

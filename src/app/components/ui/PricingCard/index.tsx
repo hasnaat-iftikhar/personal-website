@@ -1,22 +1,22 @@
-import React, { FC } from "react";
+import React, { type FC } from "react";
 
 // Type definitions
 import Button from "../Button";
-import { PricingCardProps } from "./index.d";
+import type { PricingCardProps } from "./index.d";
 import { ClashDisplay, MediaSans } from "@/app/utils/fonts";
 
 // Icons
 import { ArrowRight, Check } from "lucide-react";
 
 const PricingCard: FC<PricingCardProps> = ({ title, description, price, hourlyRate, includes }) => {
-  const textClassNames = "text-[16px] md:text-[20px] 2xl:text-[24px] text-white";
+  const textClassNames = "text-[16px] md:text-[20px] 2xl:text-[24px] text-white leading-[140%]";
   const priceTextClass = `${MediaSans.className} text-[52px] md:text-[72px] 2xl:text-[96px] tracking-[2px] text-white leading-[100%] flex items-center`;
   const dollarSign = <span className={`${ClashDisplay.className} text-[46px] md:text-[62px] 2xl:text-[82px] leading-[100%] mt-auto`}>$</span>;
 
   return (
     <div className="p-8 md:p-16 bg-black flex flex-col gap-4 md:gap-6 rounded-[30px] md:rounded-[52px]">
       {/* Title */}
-      <h3 className={`${MediaSans.className} max-w-[500px] text-[48px] md:text-[58px] 2xl:text-[64px] leading-[100%] text-white tracking-[4px]`}>
+      <h3 className={`${MediaSans.className} max-w-[500px] text-[48px] md:text-[58px] xl:text-[64px] 2xl:text-[72px] leading-[100%] text-white tracking-[4px]`}>
         {title}
       </h3>
 
@@ -51,8 +51,8 @@ const PricingCard: FC<PricingCardProps> = ({ title, description, price, hourlyRa
         <p className={textClassNames}>{description}</p>
         <p className={textClassNames}>👉 Includes</p>
         <div className="flex flex-col gap-2">
-          {includes.map((item, index) => (
-            <div key={index} className="flex items-start md:items-center gap-2">
+          {includes.map((item) => (
+            <div key={item} className="flex items-start md:items-center gap-2">
               <Check width={24} height={24} className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] text-white" />
               <p className={textClassNames}>{item}</p>
             </div>
