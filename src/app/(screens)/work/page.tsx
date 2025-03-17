@@ -25,7 +25,7 @@ const Work = () => {
 
       <div className='flex flex-col gap-[24px] md:gap-[96px]'>
         <PageHeader
-          headline='Front-End Development, Web DESIGNING & Design to Code'
+          headline='AI-Powered Development & Designing'
           title='High-performance and scalable web solutions tailored to your needs.'
           button={{
             children: (
