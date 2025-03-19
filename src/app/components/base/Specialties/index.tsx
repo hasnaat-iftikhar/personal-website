@@ -3,7 +3,7 @@
 import React, { type FC } from 'react';
 
 // Components
-import { Card, Container, SectionHeader } from '@/app/components';
+import { Container, SectionHeader, SpecialtyCard } from '@/app/components';
 
 // Type definations
 import type { SpecialtyProps } from './index.d';
@@ -21,14 +21,21 @@ const Specialties: FC<SpecialtyProps> = () => {
                     titleClassName='text-white'
                     descriptionClassName='text-white'
                 >
-                    <div className='grid grid-cols-3 gap-6'>
-                        {specialties.map((specialty) => (
-                            <Card
-                                key={specialty}
-                                title={specialty}
-                                description={specialtyDetails[specialty].description}
-                                image='/'
-                            />
+                    <div className='grid grid-cols-3 border border-solid border-[#323232]'>
+                        {specialties.map((specialty, index) => (
+                            <div key={specialty} className='flex justify-start items-start'>
+                                <SpecialtyCard
+                                    key={specialty}
+                                    title={specialty}
+                                    description={specialtyDetails[specialty].description}
+                                    image={specialtyDetails[specialty].image}
+                                    imageStyles='group-hover:skew-y-[9deg] group-hover:scale-95 origin-center transition-all duration-300'
+                                />
+
+                                {(index < specialties.length - 1) && (
+                                    <div className='w-[1px] h-full bg-[#323232]' />
+                                )}
+                            </div>
                         ))}
                     </div>
                 </SectionHeader>

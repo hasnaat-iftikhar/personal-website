@@ -48,8 +48,8 @@ const MyPricing = () => {
                             </p>
                         </div>
 
-                        <div className='lg:max-w-[420px] xl:max-w-[514px] 2xl:max-w-[620px] flex flex-col gap-[20px] md:gap-[24px] justify-start lg:items-end'>
-                            <p className='text-black md:text-white text-[16px] md:text-[20px] 2xl:text-[24px] leading-[140%] text-left lg:text-right'>Need a dedicated front-end developer to work with your team?
+                        <div className='lg:max-w-[420px] xl:max-w-[514px] 2xl:max-w-[560px] flex flex-col gap-[20px] md:gap-[24px] justify-start lg:items-end'>
+                            <p className='text-black md:text-white text-[16px] md:text-[20px] leading-[140%] text-left lg:text-right'>Need a dedicated front-end developer to work with your team?
                                 <br /><br />
                                 I bring 5+ years of experience in building high-quality web applications. Whether you need a developer for specific tasks or long-term support, I’m available for flexible contracts.
                             </p>
