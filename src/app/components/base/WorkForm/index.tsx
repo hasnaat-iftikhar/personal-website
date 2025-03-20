@@ -29,13 +29,11 @@ const WorkForm = () => {
             case 1:
                 return "What do you need?";
             case 2:
-                return "When do you need it?";
+                return "Project overview";
             case 3:
-                return "What is your budget to achieve these objectives?";
-            case 4:
-                return "How did you learn about my work?";
-            case 5:
-                return "Finally, please fill in your details so that I can get back to you as soon as possible."
+                return "Finally, please fill in your details so that I can get back to you as soon as possible.";
+            default:
+                return "";
         }
     }, [currentStep]);
 
@@ -53,7 +51,9 @@ const WorkForm = () => {
         >
             <div className='max-w-[92%] md:max-w-[600px] w-full flex flex-col items-center gap-[24px] md:gap-[42px] md:h-auto h-[400px] md:overflow-visible overflow-y-scroll md:justify-center justify-start mt-auto md:mt-0 mb-[36px] md:mb-0 hidden-vertical-scrollBar'>
                 <div className='flex flex-col gap-2 md:gap-3 text-center'>
-                    <p className='text-[#DD7E00] text-[20px] md:text-[24px]'>0{currentStep}/05</p>
+                    <p className='text-[#DD7E00] text-[20px] md:text-[24px]'>
+                        {currentStep < 3 ? `0${currentStep}` : currentStep}/3
+                    </p>
                     <h3 className={`${MediaSans.className} text-[40px] md:text-[48px] leading-[100%] text-[#171717]`}>
                         {getTitle}
                     </h3>
@@ -68,7 +68,7 @@ const WorkForm = () => {
                 <PreviousStep />
             )}
         </Modal>
-    )
-}
+    );
+};
 
 export default WorkForm;

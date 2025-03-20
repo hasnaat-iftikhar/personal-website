@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
+import React, { type FC } from 'react';
 
 // Components
 import Container from '../Container';
 import Button from '../../ui/Button';
 
 // Type definations
-import { PageHeaderProps } from './index.d';
+import type { PageHeaderProps } from './index.d';
 
 // Fonts
 import { MediaSans } from '@/app/utils/fonts';

@@ -1,7 +1,6 @@
 import React, { type FC } from "react";
 
 // Type definitions
-import Button from "../Button";
 import type { PricingCardProps } from "./index.d";
 import { ClashDisplay, MediaSans } from "@/app/utils/fonts";
 
@@ -59,11 +58,6 @@ const PricingCard: FC<PricingCardProps> = ({ title, description, price, hourlyRa
           ))}
         </div>
       </div>
-
-      {/* Button */}
-      <Button className="bg-white text-black">
-        Let&apos;s go <ArrowRight width={24} height={24} />
-      </Button>
     </div>
   );
 };
