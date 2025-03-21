@@ -36,7 +36,7 @@ const PageFooter = () => {
                     buttons={[
                         {
                             children: "Book a free consultation",
-                            onClick: () => { }
+                            onClick: () => window.open("https://cal.com/hasnaat-iftikhar/30min", "_blank")
                         },
                         {
                             children: (
