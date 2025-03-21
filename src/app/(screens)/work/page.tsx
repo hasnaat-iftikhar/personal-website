@@ -20,13 +20,13 @@ const Work = () => {
   } = useWorkForm();
 
   return (
-    <main className='flex flex-col gap-[96px] md:gap-[120px]'>
+    <main className='flex flex-col gap-[96px] lg:gap-[120px] 2xl:gap-[160px]'>
       <Header />
 
       <div className='flex flex-col gap-[24px] md:gap-[96px]'>
         <PageHeader
           headline='AI-Powered Development & Designing'
-          title='High-performance and scalable web solutions tailored to your needs.'
+          title='Scalable, high-performance web solutions built for your success!'
           button={{
             children: (
               <>

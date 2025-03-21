@@ -11,13 +11,13 @@ import PageFooter from '@/app/components/layout/PageFooter';
 
 const Pricing = () => {
   return (
-    <main className='flex flex-col gap-[96px] md:gap-[120px]'>
+    <main className='flex flex-col gap-[96px] lg:gap-[120px] 2xl:gap-[160px]'>
       <Header />
 
       <div className='flex flex-col gap-[96px]'>
         <PageHeader
           headline='Pricing'
-          title="Flexible Pricing for Quality Development"
+          title="Fair pricing for next-level development."
           description="Whether you need a custom website, a scalable web app, or want to bring me on board for your team—I've got you covered. My pricing is simple, transparent, and tailored to your project's needs."
         />
       </div>
