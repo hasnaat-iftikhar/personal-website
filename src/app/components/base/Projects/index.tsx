@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { type FC } from 'react';
 
 // Components
 import { Container } from '@/app/components';
@@ -7,7 +7,7 @@ import { Container } from '@/app/components';
 import { MediaSans } from '@/app/utils/fonts';
 
 // Type definations
-import { ProjectsProps } from './index.d';
+import type { ProjectsProps } from './index.d';
 
 const Projects:FC<ProjectsProps> = ({
     data
@@ -15,8 +15,8 @@ const Projects:FC<ProjectsProps> = ({
     return (
         <Container>
             <div className=' w-full relative flex flex-col gap-6'>
-                {data.map((p, index) => (
-                    <div key={index} className='bg-white sticky top-5 w-full h-auto md:h-[620px] aspect-video flex justify-start items-end p-[64px] rounded-[28px] overflow-hidden'>
+                {data.map((p) => (
+                    <div key={p.title} className='bg-white sticky top-5 w-full h-auto md:h-[620px] aspect-video flex justify-start items-end p-[64px] rounded-[18px] md:rounded-[28px] overflow-hidden'>
                         <div
                             className='bg-gradient-to-b from-[#d9d9d900] via-[rgba(76,76,76,0.5)] to-[rgba(0,0,0,0.7)] bg-[length:100%_100%] bg-no-repeat absolute top-0 left-0 w-full h-full z-10'
                         />

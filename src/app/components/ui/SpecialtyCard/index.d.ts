@@ -5,5 +5,6 @@ export interface SpecialtyCardProps {
     description: string;
     image: string;
     footer?: ReactNode;
-    imageStyles?: string
+    imageStyles?: string;
+    className?: string;
 }

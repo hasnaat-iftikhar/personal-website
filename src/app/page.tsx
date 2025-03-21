@@ -23,14 +23,14 @@ export default function Home() {
     } = useWorkForm();
 
     return (
-        <main className="w-full flex flex-col gap-[96px] md:gap-[160px]">
+        <main className="w-full flex flex-col gap-[96px] lg:gap-[120px] 2xl:gap-[160px]">
             <div className="flex flex-col gap-[42px] md:gap-[96px]">
                 <Header />
 
                 <section className="flex-1 flex justify-center items-center md:block">
                     <Container>
                         <div className="">
-                            <div className='flex flex-col gap-4 lg:gap-6 mb-16 md:mb-0'>
+                            <div className='flex flex-col gap-4 md:mb-0 lg:gap-6'>
                                 <p className='text-[20px] md:text-[24px] text-center md:text-left 2xl:text-[32px] text-[#1B1B1B]'>👋 Hey, I&apos;m Hasnaat and I&apos;m a</p>
 
                                 <div className='flex flex-col'>

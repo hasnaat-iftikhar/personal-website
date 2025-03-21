@@ -12,10 +12,11 @@ const SpecialityCard: FC<SpecialtyCardProps> = ({
     description,
     image,
     footer,
-    imageStyles
+    imageStyles,
+    className = ""
 }) => {
   return (
-    <div className='group outline-0 overflow-hidden relative w-full h-[600px] flex flex-col justify-start items-end p-[54px] 2xl:p-[54px] hover:bg-[#161616] transition-all duration-300'>
+    <div className={`group outline-0 overflow-hidden relative w-full md:h-[600px] flex flex-col justify-start items-end gap-12 md:gap-0 p-[34px] md:p-[54px] lg:p-[34px] 2xl:p-[54px] hover:bg-[#161616] transition-all duration-300 ${className}`}>
             <div className='flex-1 relative z-10 flex flex-col gap-[16px] md:gap-[24px]'>
                 <h3 className={`${MediaSans.className} text-[38px] md:text-[40px] 2xl:text-[44px] tracking-[1px] text-white leading-[100%]`}>
                     {title}

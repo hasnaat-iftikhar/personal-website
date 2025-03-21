@@ -21,7 +21,7 @@ const Specialties: FC<SpecialtyProps> = () => {
                     titleClassName='text-white'
                     descriptionClassName='text-white'
                 >
-                    <div className='grid grid-cols-3 border border-solid border-[#323232]'>
+                    <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 lg:border border-solid border-[#323232]'>
                         {specialties.map((specialty, index) => (
                             <div key={specialty} className='flex justify-start items-start'>
                                 <SpecialtyCard
@@ -30,6 +30,7 @@ const Specialties: FC<SpecialtyProps> = () => {
                                     description={specialtyDetails[specialty].description}
                                     image={specialtyDetails[specialty].image}
                                     imageStyles='group-hover:skew-y-[9deg] group-hover:scale-95 origin-center transition-all duration-300'
+                                    className='border border-solid border-[#323232] lg:border-0'
                                 />
 
                                 {(index < specialties.length - 1) && (
