@@ -12,12 +12,15 @@ export const specialtyDetails: {
     [key: string]: SpecialtyDetailProps;
 } = {
     'Front-End Development': {
-        description: "Highly talented front-end engineer with expertise in crafting performance optimized web applications."
+        description: "Highly talented front-end engineer with expertise in crafting performance optimized web applications.",
+        image: '/graphics/webpage.svg'
     },
     'Back-End Development': {
-        description: 'Skilled in building scalable backend applications by leveraging the power of 3-tier architecture to build robust applications.'
+        description: 'Skilled in building scalable backend applications by leveraging the power of 3-tier architecture to build robust applications.',
+        image: '/graphics/page.svg'
     },
     'Web-Application Designing': {
-        description: 'Creative designer with a keen eye for detail and a passion for creating beautiful, user-friendly designs with Figma.'
+        description: 'Creative designer with a keen eye for detail and a passion for creating beautiful, user-friendly designs with Figma.',
+        image: '/graphics/figma-frame.svg'
     },
 };

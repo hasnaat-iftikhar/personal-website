@@ -17,7 +17,7 @@ const PageFooter = () => {
     return (
         <div className='flex flex-col gap-[96px] md:gap-[160px]'>
             <Banner
-                image=''
+                image='/pictures/portfolio.jpg'
                 headline='Hey, It&apos;s me!!'
                 title='Turning Ideas into Reality, One Line of Code at a Time'
                 description='Building smooth, fast, and modern web apps isn&apos;t just my work—it&apos;s what I love doing. Every project I take on is crafted with care, ensuring quality, performance, and attention to detail.'
@@ -36,7 +36,7 @@ const PageFooter = () => {
                     buttons={[
                         {
                             children: "Book a free consultation",
-                            onClick: () => { }
+                            onClick: () => window.open("https://cal.com/hasnaat-iftikhar/30min", "_blank")
                         },
                         {
                             children: (

@@ -4,7 +4,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // Hooks
-import { useForm, UseFormRegister, FieldErrors } from "react-hook-form";
+import { useForm, type UseFormRegister, type FieldErrors } from "react-hook-form";
 import { useWorkForm } from "../context/context";
 import { useEffect } from "react";
 
@@ -59,18 +59,17 @@ const ClientDetailsForm = () => {
 
   useEffect(() => {
     // Sync context state with form values
-    Object.entries(workFormState.detail.form).forEach(([key, value]) => {
+    for (const [key, value] of Object.entries(workFormState.detail.contactDetails)) {
       setValue(key as keyof FormData, value);
-    });
+    }
   }, [workFormState, setValue]);
 
   const onSubmit = (data: FormData) => {
-    Object.entries(data).forEach(([key, value]) => {
+    for (const [key, value] of Object.entries(data)) {
       updateFormField(key, value);
-    });
+    }
 
     toast.success("Form submitted successfully!");
-    console.log("Submitted data:", data);
   };
 
   return (
@@ -121,18 +120,6 @@ const ClientDetailsForm = () => {
           }}
           errors={errors}
         />
-      </div>
-
-      <div className="w-full">
-        <textarea
-          {...register("message", { required: "Message is required" })}
-          placeholder="Message"
-          className="w-full bg-[#EEEEEE] rounded-[8px] p-[16px] text-[16px] text-[#171717] focus:outline-none border"
-          autoComplete="off"
-        />
-        {errors.message && (
-          <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
-        )}
       </div>
 
       <Button type="submit" className="w-fit mx-auto text-[20px] px-[42px]">

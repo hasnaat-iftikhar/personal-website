@@ -4,6 +4,7 @@ export { default as Accordion } from './ui/Accordion';
 export { default as Modal } from './ui/Modal';
 export { default as Card } from './ui/Card';
 export { default as PricingCard } from './ui/PricingCard';
+export { default as SpecialtyCard } from './ui/SpecialtyCard';
 export { default as Badge } from './ui/Badge';
 export { default as LabelGroup } from './ui/LabelGroup';
 

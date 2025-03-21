@@ -1,26 +1,26 @@
 "use client";
 
-import React, { createContext, FC, ReactNode, useContext, useReducer } from "react";
+import React, { createContext, type FC, type ReactNode, useContext, useReducer } from "react";
 import { workFormReducer } from "./reducer";
-import { WorkFormContextType, WorkFormState } from "./type";
+import type { WorkFormContextType, WorkFormState } from "./type";
 
 const initialState: WorkFormState = {
     modal: {
         isActive: false
     },
     currentStep: 1,
-    totalSteps: 5,
+    totalSteps: 3,
     detail: {
         clientNeed: "",
-        expectedDuration: "",
-        expectedBudget: "",
-        fromWhereLearnAboutMe: "",
-        form: {
+        projectOverview: {
+            projectTitle: "",
+            briefDescription: ""
+        },
+        contactDetails: {
             name: "",
             company: "",
             email: "",
-            phoneNumber: "",
-            message: ""
+            phoneNumber: ""
         }
     }
 };
@@ -36,7 +36,7 @@ export const WorkFormProvider: FC<{ children: ReactNode }> = ({ children }) => {
             payload: {
                 isActive: isActive
             }
-        })
+        });
     };
 
     const handleNextStep = () => {
@@ -58,12 +58,12 @@ export const WorkFormProvider: FC<{ children: ReactNode }> = ({ children }) => {
         });
     };
 
-    const updateSelectedDetail = (field: string, value: string) => {
+    const updateSelectedDetail = (section: string, field: string, value: string) => {
         dispatch({
             type: "UPDATE_SELECTED_DETAIL",
-            payload: { field, value }
+            payload: { section, field, value }
         });
-    }
+    };
 
     return (
         <WorkFormContext.Provider

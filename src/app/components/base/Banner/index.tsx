@@ -26,14 +26,14 @@ const Banner: FC<BannerProps> = ({
                     fill
                     src={image}
                     alt={`Banner Image | ${title}`}
-                    className='z-20'
+                    className='z-20 object-cover absolute top-0 left-0 w-full h-full'
                 />
 
                 <div
-                    className='bg-gradient-to-l from-[#d9d9d900] via-[rgba(76,76,76,0.5)] to-[rgba(0,0,0,0.7)] bg-[length:100%_100%] bg-no-repeat absolute top-0 left-0 w-full h-full z-30'
+                    className='bg-gradient-to-r from-[rgba(0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.5)] bg-[length:100%_100%] bg-no-repeat absolute top-0 left-0 w-full h-full z-30'
                 />
                 
-                <div className=''>
+                <div>
                     <div className='z-40 relative max-w-[600px] mr-auto flex flex-col gap-4'>
                         <div className='flex flex-col gap-2'>
                             {headline && (

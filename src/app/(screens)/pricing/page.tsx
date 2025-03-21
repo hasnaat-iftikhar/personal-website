@@ -18,7 +18,7 @@ const Pricing = () => {
         <PageHeader
           headline='Pricing'
           title="Flexible Pricing for Quality Development"
-          description="Whether you need a custom website, a scalable web app, or want to bring me on board for your team—I’ve got you covered. My pricing is simple, transparent, and tailored to your project’s needs."
+          description="Whether you need a custom website, a scalable web app, or want to bring me on board for your team—I've got you covered. My pricing is simple, transparent, and tailored to your project's needs."
         />
       </div>
 

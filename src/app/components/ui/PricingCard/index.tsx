@@ -1,15 +1,14 @@
 import React, { type FC } from "react";
 
 // Type definitions
-import Button from "../Button";
 import type { PricingCardProps } from "./index.d";
 import { ClashDisplay, MediaSans } from "@/app/utils/fonts";
 
 // Icons
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 
 const PricingCard: FC<PricingCardProps> = ({ title, description, price, hourlyRate, includes }) => {
-  const textClassNames = "text-[16px] md:text-[20px] 2xl:text-[24px] text-white leading-[140%]";
+  const textClassNames = "text-[16px] md:text-[20px] text-white leading-[140%]";
   const priceTextClass = `${MediaSans.className} text-[52px] md:text-[72px] 2xl:text-[96px] tracking-[2px] text-white leading-[100%] flex items-center`;
   const dollarSign = <span className={`${ClashDisplay.className} text-[46px] md:text-[62px] 2xl:text-[82px] leading-[100%] mt-auto`}>$</span>;
 
@@ -59,11 +58,6 @@ const PricingCard: FC<PricingCardProps> = ({ title, description, price, hourlyRa
           ))}
         </div>
       </div>
-
-      {/* Button */}
-      <Button className="bg-white text-black">
-        Let&apos;s go <ArrowRight width={24} height={24} />
-      </Button>
     </div>
   );
 };

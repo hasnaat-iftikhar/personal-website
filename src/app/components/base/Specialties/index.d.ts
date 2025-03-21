@@ -1,5 +1,6 @@
 export interface SpecialtyDetailProps {
 	description: string;
+	image: string;
 }
 
 export interface SpecialtyProps {

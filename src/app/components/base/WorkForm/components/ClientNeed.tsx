@@ -21,15 +21,15 @@ const ClientNeed = () => {
   ];
 
   const handleSelectedData = (d: string) => {
-    updateSelectedDetail('clientNeed', d);
+    updateSelectedDetail('clientNeed', d, d);
     handleNextStep();
   };
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
-      {data.map((d, index) => (
+      {data.map((d) => (
         <Button
-          key={index}
+          key={d}
           style={d === state.detail.clientNeed ? "outline" : "solid"}
           onClick={() => handleSelectedData(d)}
         >{d}</Button>
