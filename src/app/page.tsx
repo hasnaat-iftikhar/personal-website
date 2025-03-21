@@ -34,9 +34,9 @@ export default function Home() {
                                 <p className='text-[20px] md:text-[24px] text-center md:text-left 2xl:text-[32px] text-[#1B1B1B]'>👋 Hey, I&apos;m Hasnaat and I&apos;m a</p>
 
                                 <div className='flex flex-col'>
-                                    <h2 className={`${MediaSans.className} text-[18vw] text-center md:text-left md:text-[11.5vw] lg:text-[11.5vw] xl:text-[9.7vw] 2xl:text-[9vw] leading-[100%]`}>Full-Stack Developer <span className="contents md:hidden">& </span></h2>
+                                    <h2 className={`${MediaSans.className} text-[18vw] text-center md:text-left md:text-[11.5vw] lg:text-[11.5vw] xl:text-[150px] 2xl:text-[180px] leading-[100%]`}>Full-Stack Developer <span className="contents md:hidden">& </span></h2>
                                     <h2
-                                        className={`${MediaSans.className} text-[18vw] text-center md:text-left md:text-[11.5vw] lg:text-[11.5vw] xl:text-[9.7vw] 2xl:text-[9vw] leading-[100%]`}
+                                        className={`${MediaSans.className} text-[18vw] text-center md:text-left md:text-[11.5vw] lg:text-[11.5vw] xl:text-[150px] 2xl:text-[180px] leading-[100%]`}
                                         style={{
                                             WebkitTextStroke: "1.5px black",
                                             color: "#fff"
