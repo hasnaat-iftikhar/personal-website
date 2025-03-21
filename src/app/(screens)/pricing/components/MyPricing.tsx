@@ -48,7 +48,7 @@ const MyPricing = () => {
                         </div>
 
                         <div className='lg:max-w-[420px] flex flex-col gap-[20px] md:gap-[24px] justify-start lg:items-end'>
-                            <p className='text-black md:text-white text-[16px] md:text-[20px] leading-[140%] text-left lg:text-right'>I can accommodate lower budgets! Get in touch today and let's discuss your project.
+                            <p className='text-black md:text-white text-[16px] md:text-[20px] leading-[140%] text-left lg:text-right'>I can accommodate lower budgets! Get in touch today and let&lsquo;s discuss your project.
                             </p>
 
                             <Button
@@ -71,7 +71,7 @@ const MyPricing = () => {
                             <p className='text-black md:text-white text-[16px] md:text-[20px] leading-[140%] text-left lg:text-right'>
                                 Need a dedicated full-stack developer to work with your team?
                                 <br /><br />
-                                I bring 5+ years of experience in building high-quality web applications. Whether you need a developer for specific tasks or long-term support, I'm available for flexible contracts.
+                                I bring 5+ years of experience in building high-quality web applications. Whether you need a developer for specific tasks or long-term support, I&lsquo;m available for flexible contracts.
                             </p>
 
                             <Button

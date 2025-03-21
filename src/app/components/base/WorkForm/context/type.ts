@@ -1,11 +1,3 @@
-type FormFields = {
-    name: string;
-    company: string;
-    email: string;
-    phoneNumber: string;
-    message: string;
-};
-
 type WorkFormState = {
     modal: {
         isActive: boolean;

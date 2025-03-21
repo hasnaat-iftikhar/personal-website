@@ -55,7 +55,7 @@ const ClientDetailsForm = () => {
     formState: { errors },
   } = useForm<FormData>();
 
-  const { state: workFormState, updateFormField, updateSelectedDetail } = useWorkForm();
+  const { state: workFormState, updateFormField } = useWorkForm();
 
   useEffect(() => {
     // Sync context state with form values

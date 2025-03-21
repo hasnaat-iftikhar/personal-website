@@ -14,7 +14,7 @@ const Faqs:FC<FaqsProps> = ({
     <Container>
       <div className=''>
         <div className='w-full mx-auto flex flex-col'>
-          {data.map((faq, index) => (
+          {data.map((faq) => (
             <Accordion
               key={faq.title}
               title={faq.title}
