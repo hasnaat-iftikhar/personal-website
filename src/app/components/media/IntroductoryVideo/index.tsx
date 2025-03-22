@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Container } from '@/app/components';
 
 // Icons
-import { Film, Play } from 'lucide-react';
+import { Play } from 'lucide-react';
 
 const IntroductoryVideo = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
