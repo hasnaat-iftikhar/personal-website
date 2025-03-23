@@ -1,15 +1,17 @@
+import React, { type FC } from 'react'
 import { Container } from '@/app/components';
 import { MediaSans } from '@/app/utils/fonts';
 import Image from 'next/image';
-import React, { FC } from 'react'
 
 const Introduction: FC<{
     content: string;
+    projectIntroductionPicture: string;
 }> = ({
-    content = ""
+    content = "",
+    projectIntroductionPicture = ""
 }) => {
         return (
-            <section className='bg-[#1B1B1B] py-[96px] md:py-[120px]'>
+            <section className='bg-black py-[96px] md:py-[120px]'>
                 <Container>
                     <div className='max-w-[1024px] mx-auto flex flex-col gap-8 2xl:gap-16'>
                         <div className='flex flex-col gap-4 2xl:gap-6'>
@@ -24,11 +26,11 @@ const Introduction: FC<{
                             )}</p>
                         </div>
 
-                        <div className='bg-[#F1F0EB] rounded-3xl w-full h-auto aspect-video relative'>
+                        <div className='bg-[#F1F0EB] overflow-hidden rounded-2xl w-full h-auto aspect-video relative'>
                             <Image
                                 fill
                                 alt='Image'
-                                src="/"
+                                src={projectIntroductionPicture}
                             />
                         </div>
                     </div>

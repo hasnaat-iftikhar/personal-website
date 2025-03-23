@@ -11,7 +11,7 @@ const FullWidthImage = ({
 }) => {
   return (
     <Container>
-        <div className={`${className} relative aspect-video w-full bg-[#F1F0EB] rounded-3xl`}>
+        <div className={`${className} relative aspect-video w-full bg-[#F1F0EB] rounded-3xl overflow-hidden`}>
             <Image
                 src={url}
                 alt="Video"
