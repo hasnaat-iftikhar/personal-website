@@ -27,16 +27,16 @@ const ProjectDetailGrid: FC<ProjectDetailGridProps> = ({
             <ReactMarkdown
               rehypePlugins={[rehypeRaw]}
               components={{
-                p: ({ node, ...props }) => (
+                p: ({ ...props }) => (
                   <p
                     className='text-[16px] md:text-[20px] 2xl:text-[24px] text-[#1C1C1C] leading-[140%] mb-4'
                     {...props}
                   />
                 ),
-                ul: ({ node, ...props }) => (
+                ul: ({ ...props }) => (
                   <ul className='list-disc pl-5 mb-4' {...props} />
                 ),
-                li: ({ node, ...props }) => (
+                li: ({ ...props }) => (
                   <li className='mb-2' {...props} />
                 ),
               }}
