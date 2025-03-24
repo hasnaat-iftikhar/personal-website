@@ -19,7 +19,7 @@ const PageFooter = () => {
     return (
         <div className='flex flex-col gap-[96px] md:gap-[160px]'>
             <Banner
-                image='/pictures/portfolio.jpg'
+                image='/pictures/banner-image-01.png'
                 headline='Hey, It&apos;s me!!'
                 title='Turning Ideas into Reality, One Line of Code at a Time'
                 description='Building smooth, fast, and modern web apps isn&apos;t just my work—it&apos;s what I love doing. Every project I take on is crafted with care, ensuring quality, performance, and attention to detail.'
@@ -34,7 +34,7 @@ const PageFooter = () => {
                     title='Let&apos;s meet!'
                     description='Book a free 15-minute session where we will discuss your project, your issues and how to solve them.'
                     descriptionClassName='max-w-[370px]'
-                    image="/"
+                    image='/pictures/banner-image-02.png'
                     buttons={[
                         {
                             children: "Book a free consultation",

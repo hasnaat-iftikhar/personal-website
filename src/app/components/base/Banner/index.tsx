@@ -30,7 +30,7 @@ const Banner: FC<BannerProps> = ({
                 />
 
                 <div
-                    className='bg-gradient-to-r from-[rgba(0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.5)] bg-[length:100%_100%] bg-no-repeat absolute top-0 left-0 w-full h-full z-30'
+                    className='bg-gradient-to-r from-[rgba(0,0,0)] via-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.5)] bg-[length:100%_100%] bg-no-repeat absolute top-0 left-0 w-full h-full z-30'
                 />
                 
                 <div>
